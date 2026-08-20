@@ -1185,11 +1185,11 @@ export default function SiteListPage() {
                   添加站点
                 </Button>
               </DialogTrigger>
-              <DialogContent className="sm:max-w-[425px]">
+              <DialogContent className="sm:max-w-[425px] max-h-[85vh] flex flex-col">
                 <DialogHeader>
                   <DialogTitle>添加站点</DialogTitle>
                 </DialogHeader>
-                <div className="grid gap-4 py-4">
+                <div className="grid gap-4 py-4 overflow-y-auto flex-1 pr-1">
                   <div className="grid gap-2">
                     <Label htmlFor="url">站点链接 *</Label>
                     <div className="flex items-center space-x-2">
@@ -1399,11 +1399,11 @@ export default function SiteListPage() {
                 setShowEditDialog(false)
               }
             }}>
-              <DialogContent className="sm:max-w-[425px]">
+              <DialogContent className="sm:max-w-[425px] max-h-[85vh] flex flex-col">
                 <DialogHeader>
                   <DialogTitle>编辑站点</DialogTitle>
                 </DialogHeader>
-                <div className="grid gap-4 py-4">
+                <div className="grid gap-4 py-4 overflow-y-auto flex-1 pr-1">
                   <div className="grid gap-2">
                     <Label htmlFor="edit-url">站点链接 *</Label>
                     <div className="flex items-center space-x-2">
