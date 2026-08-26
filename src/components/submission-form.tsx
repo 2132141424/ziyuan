@@ -105,9 +105,9 @@ export function SubmissionForm({ navigationData }: SubmissionFormProps) {
                         <Send className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                        <CardTitle className="text-2xl font-bold">投稿网站</CardTitle>
+                        <CardTitle className="text-2xl font-bold">向水鱼之家投稿</CardTitle>
                         <CardDescription className="text-base">
-                            分享优质网站，与大家一起发现更多好资源
+                            分享优质网站与游戏资源，与大家一起发现更多好东西
                         </CardDescription>
                     </div>
                 </div>

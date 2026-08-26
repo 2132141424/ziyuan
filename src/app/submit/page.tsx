@@ -9,7 +9,7 @@ import { NavigationData } from '@/types/navigation'
 
 export const metadata: Metadata = {
     title: '网站投稿',
-    description: '向 NavSphere 投稿优质网站，分享好资源'
+    description: '向水鱼之家投稿优质网站，分享好资源'
 }
 
 export default function SubmitPage() {
