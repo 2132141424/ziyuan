@@ -1,5 +1,8 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
+import { Info } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/registry/new-york/ui/card'
 import { Icons } from '@/components/icons'
 import type { NavigationSubItem } from '@/types/navigation'
@@ -11,6 +14,14 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogTrigger,
+} from "@/components/ui/dialog"
 
 interface NavigationCardProps {
   item: NavigationSubItem
@@ -25,7 +36,7 @@ export function NavigationCard({ item, siteConfig }: NavigationCardProps) {
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger asChild>
-          <Card className="overflow-hidden transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
+          <Card className="relative overflow-hidden transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
             <Link
               href={item.href}
               target={linkTarget}
@@ -53,10 +64,32 @@ export function NavigationCard({ item, siteConfig }: NavigationCardProps) {
                 </div>
               </CardHeader>
             </Link>
+            {item.about && (
+              <Dialog>
+                <DialogTrigger asChild>
+                  <button
+                    type="button"
+                    aria-label="关于"
+                    title="关于"
+                    className="absolute top-2 right-2 z-10 rounded-md p-1 text-muted-foreground hover:bg-accent hover:text-accent-foreground"
+                  >
+                    <Info className="h-4 w-4" />
+                  </button>
+                </DialogTrigger>
+                <DialogContent>
+                  <DialogHeader>
+                    <DialogTitle className="pr-6">{item.title}</DialogTitle>
+                    <DialogDescription className="whitespace-pre-line leading-relaxed text-foreground/80">
+                      {item.about}
+                    </DialogDescription>
+                  </DialogHeader>
+                </DialogContent>
+              </Dialog>
+            )}
           </Card>
         </TooltipTrigger>
-        <TooltipContent 
-          side="bottom" 
+        <TooltipContent
+          side="bottom"
           align="center"
           sideOffset={8}
           className="max-w-[280px] text-xs sm:text-sm"

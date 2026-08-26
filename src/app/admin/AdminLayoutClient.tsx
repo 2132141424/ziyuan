@@ -17,7 +17,6 @@ import {
   Home,
   Moon,
   Sun,
-  Monitor,
   Database,
   Inbox,
 } from "lucide-react"
@@ -65,11 +64,6 @@ const menuItems = [
         href: "/admin/sitelist"
       }
     ]
-  },
-  {
-    title: "视频管理",
-    href: "/admin/videos",
-    icon: Monitor
   },
   {
     title: "投稿审核",

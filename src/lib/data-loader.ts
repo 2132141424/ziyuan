@@ -1,5 +1,5 @@
 import type { SiteConfig, SiteInfo } from '@/types/site'
-import type { NavigationData, NavigationDataRaw, NavigationItem, NavigationSubItem, NavigationSubItemRaw, VideoConfig } from '@/types/navigation'
+import type { NavigationData, NavigationDataRaw, NavigationItem, NavigationSubItem, NavigationSubItemRaw } from '@/types/navigation'
 
 export function processSiteData(siteDataRaw: SiteInfo): SiteConfig {
     return {
@@ -22,23 +22,6 @@ export function processSiteData(siteDataRaw: SiteInfo): SiteConfig {
 }
 
 export function processNavigationSubItem(item: NavigationSubItemRaw): NavigationSubItem {
-    let videoConfig: VideoConfig | undefined = undefined
-
-    if (item.videoConfig) {
-        const validType = (item.videoConfig.type === 'bilibili' || item.videoConfig.type === 'youtube')
-            ? item.videoConfig.type as 'bilibili' | 'youtube'
-            : 'bilibili' // default fallback
-
-        videoConfig = {
-            type: validType,
-            videoId: item.videoConfig.videoId,
-            bvid: item.videoConfig.bvid,
-            aid: item.videoConfig.aid,
-            cid: item.videoConfig.cid,
-            p: item.videoConfig.p
-        }
-    }
-
     return {
         id: item.id,
         title: item.title,
@@ -46,8 +29,8 @@ export function processNavigationSubItem(item: NavigationSubItemRaw): Navigation
         description: item.description,
         icon: item.icon,
         useDefaultIcon: item.useDefaultIcon,
-        enabled: item.enabled,
-        videoConfig
+        about: item.about,
+        enabled: item.enabled
     }
 }
 

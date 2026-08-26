@@ -12,14 +12,16 @@
           "title": "2048",
           "href": "https://download.waterfish.ren/download/1.zip",
           "description": "2048 网页小游戏｜作者：waterfish",
+          "about": "2048 网页小游戏｜作者：waterfish｜来源：水鱼之家资源中心(waterfish.ren)｜点击即可下载，版权归原作者所有",
           "icon": "/assets/images/icon-broken.svg",
           "enabled": true
         },
         {
           "id": "1781510611002",
           "title": "植物大战僵尸",
-          "href": "https://github.com/Azure12355/game-plant-vs-zombies",
+          "href": "https://github.com/Azure12355/game-plant-vs-zombies/archive/refs/heads/main.zip",
           "description": "植物大战僵尸 HTML 版｜作者：Azure12355｜开源（GitHub 原仓库）",
+          "about": "植物大战僵尸 HTML 版｜作者：Azure12355｜开源项目（GitHub）｜点击直接下载源码压缩包，版权归原作者",
           "icon": "/assets/images/icon-broken.svg",
           "enabled": true
         },
@@ -28,14 +30,16 @@
           "title": "贪吃蛇",
           "href": "https://download.waterfish.ren/download/3.zip",
           "description": "贪吃蛇网页小游戏｜作者：waterfish",
+          "about": "贪吃蛇网页小游戏｜作者：waterfish｜来源：水鱼之家资源中心(waterfish.ren)｜点击即可下载，版权归原作者所有",
           "icon": "/assets/images/icon-broken.svg",
           "enabled": true
         },
         {
           "id": "1781510611004",
           "title": "迷宫",
-          "href": "https://github.com/knightyun/maze-game",
+          "href": "https://github.com/knightyun/maze-game/archive/refs/heads/master.zip",
           "description": "网页迷宫小游戏｜作者：knightyun｜开源（GitHub 原仓库）",
+          "about": "网页迷宫小游戏｜作者：knightyun（MIT License）｜开源项目（GitHub）｜点击直接下载源码压缩包",
           "icon": "/assets/images/icon-broken.svg",
           "enabled": true
         },
@@ -44,6 +48,7 @@
           "title": "舒尔特方格",
           "href": "https://download.waterfish.ren/download/5.zip",
           "description": "舒尔特方格注意力训练｜作者：waterfish",
+          "about": "舒尔特方格注意力训练｜作者：waterfish｜来源：水鱼之家资源中心(waterfish.ren)｜点击即可下载，版权归原作者所有",
           "icon": "/assets/images/icon-broken.svg",
           "enabled": true
         },
@@ -52,6 +57,7 @@
           "title": "我的世界 HTML 版",
           "href": "https://eaglercraft.ir/zh/downloads/",
           "description": "网页版我的世界（Eaglercraft）｜作者：eaglercraft｜官方下载",
+          "about": "网页版我的世界 Eaglercraft｜作者：eaglercraft｜官方出品，浏览器内即可游玩，支持多人联机",
           "icon": "/assets/icons/eaglercraft.png",
           "enabled": true
         },
@@ -60,6 +66,7 @@
           "title": "传说之下·汉化版",
           "href": "https://download.waterfish.ren/download/7.7z",
           "description": "传说之下（Undertale）汉化版｜汉化：星云散落｜版权归原开发商与汉化者，此为第三方汉化，仅供学习交流",
+          "about": "传说之下（Undertale）汉化版｜汉化：星云散落｜版权归原开发商与汉化者，此为第三方汉化补丁，仅供学习交流，请支持正版",
           "icon": "/assets/images/icon-broken.svg",
           "enabled": true
         },
@@ -68,6 +75,7 @@
           "title": "在线转盘",
           "href": "https://download.waterfish.ren/download/8.zip",
           "description": "在线抽奖转盘｜作者：waterfish",
+          "about": "在线抽奖转盘｜作者：waterfish｜来源：水鱼之家资源中心(waterfish.ren)｜点击即可下载，版权归原作者所有",
           "icon": "/assets/images/icon-broken.svg",
           "enabled": true
         },
@@ -76,6 +84,7 @@
           "title": "PCL2 启动器",
           "href": "https://ltcat.lanzouv.com/b0aj6gsid",
           "description": "PCL2 我的世界启动器｜作者：龙腾猫跃｜官方网盘（提取码 pcl2）",
+          "about": "PCL2 我的世界启动器｜作者：龙腾猫跃｜官方发布（爱发电网盘下载，提取码 pcl2）",
           "icon": "/assets/images/icon-broken.svg",
           "enabled": true
         },
@@ -84,6 +93,7 @@
           "title": "HMCL 启动器",
           "href": "https://hmcl.huangyuhui.net/download/",
           "description": "HMCL 我的世界启动器｜作者：huangyuhui｜官方",
+          "about": "HMCL 我的世界启动器｜作者：huangyuhui｜官方出品，多平台开源",
           "icon": "/assets/icons/hmcl.png",
           "enabled": true
         },
@@ -92,14 +102,16 @@
           "title": "FCL 启动器",
           "href": "https://foldcraftlauncher.cn/#tab2",
           "description": "FCL 安卓端我的世界启动器｜作者：FCL-Team｜官方",
+          "about": "FCL 安卓端我的世界启动器｜作者：FCL-Team｜官方出品，开源免费",
           "icon": "/assets/icons/fcl.svg",
           "enabled": true
         },
         {
           "id": "1781510611012",
           "title": "植物大战僵尸·杂交版",
-          "href": "https://github.com/nextisme/Plants.vs.Zombies-hybrid",
-          "description": "植物大战僵尸杂交版｜作者：nextisme｜开源（GitHub 原仓库）",
+          "href": "https://github.com/nextisme/Plants.vs.Zombies-hybrid/archive/refs/heads/main.zip",
+          "description": "植物大战僵尸杂交版｜制作：潜艇伟伟迷｜收录：nextisme（GitHub）",
+          "about": "植物大战僵尸·杂交版｜制作：潜艇伟伟迷｜收录于开源仓库 nextisme（GitHub）｜点击直接下载源码压缩包，版权归原制作人",
           "icon": "/assets/images/icon-broken.svg",
           "enabled": true
         },
@@ -108,6 +120,7 @@
           "title": "魔方",
           "href": "https://download.waterfish.ren/download/13.zip",
           "description": "在线魔方，多种玩法与难度｜作者：源码之家",
+          "about": "在线魔方，多种玩法与难度｜作者：源码之家｜来源：水鱼之家资源中心(waterfish.ren)｜点击即可下载，版权归原作者所有",
           "icon": "/assets/images/icon-broken.svg",
           "enabled": true
         },
@@ -116,14 +129,7 @@
           "title": "HTML5 中国象棋",
           "href": "https://download.waterfish.ren/download/14.zip",
           "description": "HTML5 中国象棋在线对弈｜作者：小星",
-          "icon": "/assets/images/icon-broken.svg",
-          "enabled": true
-        },
-        {
-          "id": "1781510611015",
-          "title": "死神VS火影",
-          "href": "https://share.fnnas.net/s/7e9deb3e93c7496496",
-          "description": "死神VS火影 同人格斗游戏｜作者：BleachVsNaruto｜版权归原作者，非官方商售",
+          "about": "HTML5 中国象棋在线对弈｜作者：小星｜来源：水鱼之家资源中心(waterfish.ren)｜点击即可下载，版权归原作者所有",
           "icon": "/assets/images/icon-broken.svg",
           "enabled": true
         },
@@ -132,6 +138,7 @@
           "title": "泰拉世界",
           "href": "http://dl.829965.xyz/pcc",
           "description": "TerraCraft 横板沙盒平台游戏｜作者：进击的蓝耀西｜官方",
+          "about": "TerraCraft 横板沙盒平台游戏｜作者：进击的蓝耀西｜官方出品，可直接游玩",
           "icon": "/assets/images/icon-broken.svg",
           "enabled": true
         }

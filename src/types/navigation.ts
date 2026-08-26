@@ -1,13 +1,4 @@
 // Raw types for JSON data (before validation)
-export interface VideoConfigRaw {
-  type: string
-  videoId?: string
-  bvid?: string
-  aid?: string
-  cid?: string
-  p?: number
-}
-
 export interface NavigationSubItemRaw {
   id: string
   title: string
@@ -15,8 +6,8 @@ export interface NavigationSubItemRaw {
   description?: string
   icon?: string
   useDefaultIcon?: boolean
+  about?: string
   enabled: boolean
-  videoConfig?: VideoConfigRaw
 }
 
 // Validated types (after processing)
@@ -27,17 +18,8 @@ export interface NavigationSubItem {
   description?: string
   icon?: string
   useDefaultIcon?: boolean
+  about?: string
   enabled: boolean
-  videoConfig?: VideoConfig
-}
-
-export interface VideoConfig {
-  type: 'bilibili' | 'youtube'
-  videoId?: string // simplified ID for youtube or bvid for bilibili
-  bvid?: string
-  aid?: string
-  cid?: string
-  p?: number
 }
 
 export interface NavigationCategoryRaw {
