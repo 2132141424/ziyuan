@@ -17,6 +17,7 @@ import {
   Home,
   Moon,
   Sun,
+  Monitor,
   Database,
   Inbox,
 } from "lucide-react"

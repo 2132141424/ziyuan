@@ -8,7 +8,7 @@ import { Sidebar } from '@/components/sidebar'
 import { SearchBar } from '@/components/search-bar'
 import { ModeToggle } from '@/components/mode-toggle'
 import { Footer } from '@/components/footer'
-import { Github, HelpCircle, Puzzle, Send } from 'lucide-react'
+import { Github, HelpCircle, Puzzle, Send, Fish } from 'lucide-react'
 import { Button } from "@/registry/new-york/ui/button"
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
@@ -157,6 +157,20 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
               </Link>
               
               <ModeToggle />
+              <Link
+                href="https://waterfish.ren/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="访问水鱼之家主页"
+              >
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="hover:bg-accent hover:text-accent-foreground"
+                >
+                  <Fish className="h-5 w-5" />
+                </Button>
+              </Link>
               <Link
                 href="https://github.com/tianyaxiang/NavSphere"
                 target="_blank"
