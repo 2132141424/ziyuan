@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" integrity="sha384-wuqJ3gKnD2BDa/kF14f6SECESfcvVTsNruuVi3BOAk2mNDIOn/uvHdd+eMK7FY0b" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/material-icons@1.13.14/iconfont/material-icons.css" integrity="sha256-hyKQMSVr7POLGjxEcB+AR+QcuJWYVx8xA57WW1Dnvlw=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/mdui.theme.enhanced.css">
+  <link rel="stylesheet" href="/css/mdui.patch.css">
+  <link rel="stylesheet" href="/css/xf.css">
+  <link rel="stylesheet" href="/css/rtl.css">
+  <script>/* 提前按已保存的语言偏好设置 lang 与 RTL 方向，避免加载后布局翻转闪烁。RTL 语言代码与 js/common/i18n.js 保持一致。 */
+  try { var o = JSON.parse(localStorage.getItem('fdn-language-order') || 'null'); var l = (o && o[0]) || localStorage.getItem('fdn-language') || ''; if (l) { document.documentElement.lang = l; if (/^(ar|he|fa|ur|ps|dv|ku|sd)(-|$)/i.test(l)) { document.documentElement.dir = 'rtl'; } } } catch (e) {}
+  </script>
+  <link rel="icon" href="/data/software/0/icon.avif">
+  <title data-i18n="notFound.pageTitle">404 Not Found - FCL下载站</title>
+  <meta name="description" data-i18n-attr="content" data-i18n="notFound.description" content="在FCL下载站中访问了不存在的资源。">
+  <meta name="robots" content="noindex, nofollow">
+</head>
+
+<body class="mdui-appbar-with-toolbar mdui-container-fluid mdui-theme-layout-auto">
+  <div class="mdui-appbar mdui-appbar-fixed">
+    <div class="mdui-toolbar mdui-color-theme">
+      <a href="javascript: window.history.back();" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons" aria-hidden="true">arrow_back</i></a>
+      <a href="/" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons" aria-hidden="true">home</i></a>
+      <a href="" class="mdui-typo-title" data-i18n="notFound.title">404 Not Found</a>
+      <div class="mdui-toolbar-spacer"></div>
+      <a href="javascript:void(0);" id="menu_btn" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons" aria-hidden="true">menu</i></a>
+    </div>
+  </div>
+
+  <div>
+    <div class="mdui-panel" mdui-panel>
+      <div class="mdui-panel-item mdui-panel-item-open xf-404-danger">
+        <div class="mdui-panel-item-header mdui-ripple">
+          <div>
+            <i class="mdui-icon material-icons" aria-hidden="true">warning</i>
+            HTTP 404
+          </div>
+          <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+        </div>
+        <div class="mdui-panel-item-body mdui-typo">
+          <!--
+          <div style="text-align: center;">
+            <img src="/media/img/NEXT.FCL下载站-疑惑.webp" alt="可爱的狐狸兽人，白色外套，表情疑惑，无奈。动漫风格" style="max-width: 240px;">
+          </div>
+          -->
+          <h2 data-i18n="notFound.title">HTTP 404 - Not Found</h2>
+          <div class="mdui-panel" mdui-panel>
+            <div class="mdui-panel-item">
+              <div class="mdui-panel-item-header mdui-ripple">
+                <div data-i18n="notFound.what">何意味？</div>
+                <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+              </div>
+              <div class="mdui-panel-item-body">
+                <div class="mdui-typo">
+                  <p data-i18n="notFound.whatDesc">HTTP 响应状态码 <code data-i18n="[code]">404 Not Found</code> 指的是服务器无法找到所请求的资源。资源可能已被删除、移动或从未存在。</p>
+                  <p data-i18n="notFound.references">参见：<a data-i18n="notFound.mdnLink" data-i18n-attr="href" href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Reference/Status/404" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>，<a data-i18n="notFound.wikipediaLink" data-i18n-attr="href" href="https://zh.wikipedia.org/wiki/HTTP_404" target="_blank" rel="noopener noreferrer">Wikipedia</a>。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="mdui-panel-item mdui-panel-item-open">
+        <div class="mdui-panel-item-header mdui-ripple">
+          <div>
+            <i class="mdui-icon material-icons" aria-hidden="true">help</i>
+            <span data-i18n="notFound.suggestion">建议</span>
+          </div>
+          <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+        </div>
+        <div class="mdui-panel-item-body">
+          <a href="/" class="mdui-btn mdui-btn-block mdui-btn-raised mdui-ripple"><i class="mdui-icon material-icons" aria-hidden="true">home</i> <span data-i18n="notFound.visitHome">访问主页</span></a>
+          <a href="javascript:history.back();" class="mdui-btn mdui-btn-block mdui-btn-raised mdui-ripple"><i class="mdui-icon material-icons" aria-hidden="true">arrow_back</i> <span data-i18n="notFound.goBack">返回上页</span></a>
+          <div id="feedbackContainer">
+            <!-- 动态加载反馈按钮 -->
+          </div>
+        </div>
+      </div>
+
+      <div id="sponsorRemindContainer"></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js" integrity="sha384-Iw/ABpFbyL5jmtL3QSGm+kpo+Rnj0Cs4NoQm69VmGC7j4pcv5MbN55KVNMMyB4J6" crossorigin="anonymous"></script>
+  <script type="module" src="/js/common.js"></script>
+  <script type="module" src="/js/404.js"></script>
+</body>
+
+</html>
