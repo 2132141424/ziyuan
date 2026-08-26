@@ -8,11 +8,19 @@ import { Sidebar } from '@/components/sidebar'
 import { SearchBar } from '@/components/search-bar'
 import { ModeToggle } from '@/components/mode-toggle'
 import { Footer } from '@/components/footer'
-import { Github, HelpCircle, Puzzle, Send, Fish } from 'lucide-react'
+import { Send, Fish, Info } from 'lucide-react'
 import { Button } from "@/registry/new-york/ui/button"
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import { Menu } from 'lucide-react'
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogTrigger,
+} from "@/components/ui/dialog"
 
 interface NavigationContentProps {
   navigationData: NavigationData
@@ -171,48 +179,26 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
                   <Fish className="h-5 w-5" />
                 </Button>
               </Link>
-              <Link
-                href="https://github.com/tianyaxiang/NavSphere"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="访问 GitHub 仓库"
-              >
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="hover:bg-accent hover:text-accent-foreground"
-                >
-                  <Github className="h-5 w-5" />
-                </Button>
-              </Link>
-              <Link
-                href="https://github.com/tianyaxiang/navsphere-extension"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="下载浏览器插件"
-              >
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="hover:bg-accent hover:text-accent-foreground"
-                >
-                  <Puzzle className="h-5 w-5" />
-                </Button>
-              </Link>
-              <Link
-                href="https://mp.weixin.qq.com/s/XBeedyqHGJtaAa_v9EXz4A"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="查看帮助文档"
-              >
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="hover:bg-accent hover:text-accent-foreground"
-                >
-                  <HelpCircle className="h-5 w-5" />
-                </Button>
-              </Link>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="hover:bg-accent hover:text-accent-foreground"
+                  >
+                    <Info className="h-4 w-4 mr-2" />
+                    关于本网站
+                  </Button>
+                </DialogTrigger>
+                <DialogContent>
+                  <DialogHeader>
+                    <DialogTitle>关于本网站</DialogTitle>
+                    <DialogDescription className="whitespace-pre-line leading-relaxed text-foreground/80">
+                      {siteData?.basic?.description}
+                    </DialogDescription>
+                  </DialogHeader>
+                </DialogContent>
+              </Dialog>
               <Button
                 variant="ghost"
                 size="icon"

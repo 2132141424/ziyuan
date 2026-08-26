@@ -16,10 +16,10 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'NavSphere',
-    template: '%s - NavSphere'
+    default: '水鱼之家',
+    template: '%s - 水鱼之家'
   },
-  description: 'A modern navigation platform',
+  description: '水鱼之家 · 资源导航',
   icons: {
     icon: '/favicon.ico'
   }

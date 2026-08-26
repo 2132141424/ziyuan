@@ -8,7 +8,7 @@ import { Button } from '@/registry/new-york/ui/button'
 import { NavigationData } from '@/types/navigation'
 
 export const metadata: Metadata = {
-    title: '网站投稿 - NavSphere',
+    title: '网站投稿',
     description: '向 NavSphere 投稿优质网站，分享好资源'
 }
 
