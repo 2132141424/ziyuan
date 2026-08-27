@@ -19,17 +19,6 @@
           "enabled": true
         },
         {
-          "id": "1781510611005",
-          "title": "舒尔特方格",
-          "href": "https://dow.ziyuan.waterfish.ren/download/5.zip",
-          "description": "舒尔特方格注意力训练｜作者：waterfish",
-          "about": "舒尔特方格注意力训练｜作者：waterfish｜来源：水鱼之家资源中心(waterfish.ren)｜点击即可下载，版权归原作者所有",
-          "icon": "/assets/images/icon-broken.svg",
-          "previewPath": "/Files/5/page/",
-          "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/5.zip",
-          "enabled": true
-        },
-        {
           "id": "1781510611007",
           "title": "传说之下·汉化版",
           "href": "https://dow.ziyuan.waterfish.ren/download/7.7z",
@@ -172,6 +161,15 @@
               "title": "迷宫",
               "href": "https://dow.ziyuan.waterfish.ren/download/4.zip",
               "description": "网页迷宫小游戏｜作者：knightyun｜开源（GitHub 原仓库）",
+              "icon": "/assets/images/icon-broken.svg",
+              "useDefaultIcon": false,
+              "enabled": true
+            },
+            {
+              "id": "1781510611005",
+              "title": "舒尔特方格",
+              "href": "https://dow.ziyuan.waterfish.ren/download/5.zip",
+              "description": "舒尔特方格注意力训练｜作者：waterfish",
               "icon": "/assets/images/icon-broken.svg",
               "useDefaultIcon": false,
               "enabled": true
