@@ -19,17 +19,6 @@
           "enabled": true
         },
         {
-          "id": "1781510611003",
-          "title": "贪吃蛇",
-          "href": "https://dow.ziyuan.waterfish.ren/download/3.zip",
-          "description": "贪吃蛇网页小游戏｜作者：waterfish",
-          "about": "贪吃蛇网页小游戏｜作者：waterfish｜来源：水鱼之家资源中心(waterfish.ren)｜点击即可下载，版权归原作者所有",
-          "icon": "/assets/images/icon-broken.svg",
-          "previewPath": "/Files/3/page/",
-          "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/3.zip",
-          "enabled": true
-        },
-        {
           "id": "1781510611004",
           "title": "迷宫",
           "href": "https://dow.ziyuan.waterfish.ren/download/4.zip",
@@ -176,6 +165,15 @@
               "title": "2048",
               "href": "https://dow.ziyuan.waterfish.ren/download/1.zip",
               "description": "2048 网页小游戏｜作者：waterfish",
+              "icon": "/assets/images/icon-broken.svg",
+              "useDefaultIcon": false,
+              "enabled": true
+            },
+            {
+              "id": "1781510611003",
+              "title": "贪吃蛇",
+              "href": "https://dow.ziyuan.waterfish.ren/download/3.zip",
+              "description": "贪吃蛇网页小游戏｜作者：waterfish",
               "icon": "/assets/images/icon-broken.svg",
               "useDefaultIcon": false,
               "enabled": true
