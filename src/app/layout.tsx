@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   description: '水鱼之家 · 资源导航',
   icons: {
-    icon: '/favicon.ico'
+    icon: '/assets/images/icon.png'
   }
 }
 

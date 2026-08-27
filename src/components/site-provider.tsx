@@ -41,7 +41,7 @@ export function SiteProvider({ children }: { children: React.ReactNode }) {
             keywords: '资源导航,小游戏,我的世界,网页游戏,工具导航,游戏下载'
           },
           appearance: {
-            logo: '/assets/images/waterfish-icon.png',
+            logo: '/assets/images/icon.png',
             favicon: '/assets/images/favicon.ico',
             theme: 'system'
           },

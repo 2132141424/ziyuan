@@ -41,7 +41,7 @@ function SignInContent() {
           <div className="flex items-center gap-2">
             <div className="relative w-8 h-8 overflow-hidden rounded-md">
               <img
-                src="/assets/images/waterfish-icon.png"
+                src="/assets/images/icon.png"
                 alt="Logo"
                 className="object-cover"
               />

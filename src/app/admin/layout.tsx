@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   title: '水鱼之家 · 管理后台',
   description: '水鱼之家 Admin Dashboard',
   icons: {
-    icon: '/assets/images/waterfish-icon.png',
-    shortcut: '/assets/images/waterfish-icon.png',
-    apple: '/assets/images/waterfish-icon.png',
+    icon: '/assets/images/icon.png',
+    shortcut: '/assets/images/icon.png',
+    apple: '/assets/images/icon.png',
   }
 }
 

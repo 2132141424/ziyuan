@@ -22,7 +22,8 @@ const config = {
       clientId: process.env.GITHUB_CLIENT_ID!,
       clientSecret: process.env.GITHUB_CLIENT_SECRET!,
       authorization: {
-        params: { scope: 'repo' }
+        // repo: 向仓库写数据；user:email: 读取用户邮箱用于后台白名单校验
+        params: { scope: 'read:user user:email repo' }
       }
     })
   ],

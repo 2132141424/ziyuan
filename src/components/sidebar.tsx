@@ -92,7 +92,18 @@ export function Sidebar({ className, navigationData, siteInfo, onClose }: Sideba
           ) : (
             <LucideIcons.Globe className="h-6 w-6" />
           )}
-          <span>{siteInfo.basic.title}</span>
+          <span className="flex items-center gap-1.5 whitespace-nowrap">
+            <a
+              href="https://waterfish.ren"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              水鱼之家
+            </a>
+            <span className="text-muted-foreground">/</span>
+            <span className="text-primary">资源中心</span>
+          </span>
         </Link>
 
         {/* 移动模式下的关闭按钮 */}
@@ -111,26 +122,6 @@ export function Sidebar({ className, navigationData, siteInfo, onClose }: Sideba
 
       <ScrollArea className="h-[calc(100vh-3.5rem)] px-3 py-2">
         <div className="space-y-1">
-          <div className="py-2 border-b border-border/60 mb-1">
-            <div className="flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm font-semibold">
-              <LucideIcons.Fish className="h-4 w-4 text-primary" />
-              <a
-                href="https://waterfish.ren"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-foreground hover:text-primary transition-colors"
-              >
-                水鱼之家
-              </a>
-              <span className="text-muted-foreground">/</span>
-              <a
-                href="/"
-                className="text-primary hover:text-primary/80 transition-colors"
-              >
-                资源中心
-              </a>
-            </div>
-          </div>
           {navigationData.navigationItems.map((category) => (
             <div key={category.id} className="py-2">
               <div className="flex items-center">

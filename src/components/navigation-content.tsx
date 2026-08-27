@@ -183,11 +183,11 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
                 <DialogTrigger asChild>
                   <Button
                     variant="ghost"
-                    size="sm"
+                    size="icon"
+                    aria-label="关于"
                     className="hover:bg-accent hover:text-accent-foreground"
                   >
-                    <Info className="h-4 w-4 mr-2" />
-                    关于
+                    <Info className="h-5 w-5" />
                   </Button>
                 </DialogTrigger>
                 <DialogContent>
