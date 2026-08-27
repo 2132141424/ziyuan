@@ -144,6 +144,15 @@
         }
       ],
       "subCategories": []
+    },
+    {
+      "id": "1787800862775",
+      "title": "图吧工具",
+      "icon": "LayoutGrid",
+      "description": "",
+      "enabled": true,
+      "items": [],
+      "subCategories": []
     }
   ]
 }
