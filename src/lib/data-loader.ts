@@ -32,6 +32,7 @@ export function processNavigationSubItem(item: NavigationSubItemRaw): Navigation
         about: item.about,
         previewPath: item.previewPath,
         downloadUrl: item.downloadUrl,
+        projectUrl: item.projectUrl,
         enabled: item.enabled
     }
 }

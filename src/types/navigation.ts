@@ -9,6 +9,7 @@ export interface NavigationSubItemRaw {
   about?: string
   previewPath?: string
   downloadUrl?: string
+  projectUrl?: string
   enabled: boolean
 }
 
@@ -23,6 +24,7 @@ export interface NavigationSubItem {
   about?: string
   previewPath?: string
   downloadUrl?: string
+  projectUrl?: string
   enabled: boolean
 }
 

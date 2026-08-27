@@ -139,6 +139,7 @@
               "href": "https://eaglercraft.ir/zh/downloads/",
               "description": "网页版我的世界（Eaglercraft）｜作者：eaglercraft｜官方下载",
               "icon": "/assets/icons/eaglercraft.png",
+              "projectUrl": "https://eaglercraft.ir/",
               "useDefaultIcon": false,
               "enabled": true
             },
@@ -148,6 +149,7 @@
               "href": "https://ltcat.lanzouv.com/b0aj6gsid",
               "description": "PCL2 我的世界启动器｜作者：龙腾猫跃｜官方网盘（提取码 pcl2）",
               "icon": "/assets/images/icon-broken.svg",
+              "projectUrl": "https://github.com/Hex-Dragon/PCL2",
               "useDefaultIcon": false,
               "enabled": true
             },
@@ -157,6 +159,7 @@
               "href": "https://hmcl.huangyuhui.net/download/",
               "description": "HMCL 我的世界启动器｜作者：huangyuhui｜官方",
               "icon": "/assets/icons/hmcl.png",
+              "projectUrl": "https://hmcl.huangyuhui.net/",
               "useDefaultIcon": false,
               "enabled": true
             },
@@ -166,6 +169,7 @@
               "href": "https://foldcraftlauncher.cn/#tab2",
               "description": "FCL 安卓端我的世界启动器｜作者：FCL-Team｜官方",
               "icon": "/assets/icons/fcl.svg",
+              "projectUrl": "https://foldcraftlauncher.cn/",
               "useDefaultIcon": false,
               "enabled": true
             }
@@ -186,6 +190,7 @@
           "href": "https://www.tbtool.cn/download/",
           "description": "图吧工具箱下载链接，免费、纯净、全面的硬件检测工具合集。集成CPU、显卡、内存、硬盘等检测工具，助你轻松诊断电脑性能。立即下载体验。",
           "icon": "/assets/favicon_1787801254817.png",
+          "projectUrl": "https://www.tbtool.cn/",
           "useDefaultIcon": false,
           "enabled": true
         }

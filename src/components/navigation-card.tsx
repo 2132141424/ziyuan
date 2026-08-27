@@ -64,11 +64,11 @@ export function NavigationCard({ item, siteConfig }: NavigationCardProps) {
   // 获取链接打开方式，默认为新窗口
   const linkTarget = siteConfig?.navigation?.linkTarget || '_blank'
 
-  // 可在线预览(html)时显示“在线预览”，否则显示“项目页面”
+  // 可在线预览(html)时显示“在线预览”，否则显示“项目页面”（优先指向项目主页，无主页字段时回退到 href）
   const canPreview = Boolean(item.previewPath)
   const primaryHref = canPreview
     ? `${PREVIEW_BASE_URL}${item.previewPath}`
-    : item.href
+    : item.projectUrl || item.href
   const primaryLabel = canPreview ? '在线预览' : '项目页面'
   const primaryIcon = canPreview ? Play : Globe
   const downloadHref = item.downloadUrl || item.href
