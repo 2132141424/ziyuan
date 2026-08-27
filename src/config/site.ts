@@ -1,6 +1,5 @@
 import type { SiteConfig } from '@/types/site'
 
-// 4everland/EdgeOne 在线预览站根域名（部署后请在 site.json 的 preview.host 覆盖）
 export const PREVIEW_BASE_URL = process.env.NEXT_PUBLIC_PREVIEW_HOST || 'https://dow.ziyuan.waterfish.ren'
 
 export const siteConfig: SiteConfig = {

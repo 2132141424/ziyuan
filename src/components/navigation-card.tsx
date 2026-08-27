@@ -129,7 +129,9 @@ export function NavigationCard({ item, siteConfig }: NavigationCardProps) {
             )}
             {/* hover 操作按钮 */}
             <div className="absolute inset-x-0 bottom-0 flex items-center justify-end gap-2 p-2 bg-gradient-to-t from-background via-background/85 to-transparent opacity-0 translate-y-3 transition-all duration-200 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto">
-              <ActionButton href={primaryHref} icon={primaryIcon} label={primaryLabel} />
+              {(canPreview || item.projectUrl) && (
+                <ActionButton href={primaryHref} icon={primaryIcon} label={primaryLabel} />
+              )}
               <ActionButton
                 href={downloadHref}
                 icon={Download}
