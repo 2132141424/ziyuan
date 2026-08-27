@@ -193,6 +193,15 @@
           "projectUrl": "https://www.tbtool.cn/",
           "useDefaultIcon": false,
           "enabled": true
+        },
+        {
+          "id": "site_1787826450079_74jw83iar",
+          "title": "Rufus",
+          "href": "https://rufus.ie/downloads/",
+          "description": "Rufus-烧录系统镜像到磁盘的工具",
+          "icon": "/assets/favicon_1787826362251.png",
+          "useDefaultIcon": false,
+          "enabled": true
         }
       ],
       "subCategories": []
