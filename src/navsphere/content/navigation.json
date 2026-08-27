@@ -200,6 +200,59 @@
         }
       ],
       "subCategories": []
+    },
+    {
+      "id": "1789000000001",
+      "title": "网页小游戏",
+      "icon": "Gamepad2",
+      "description": "开源可再分发网页小游戏合集，可直接在线试玩或下载，版权归各自原作者。",
+      "enabled": true,
+      "items": [
+        {
+          "id": "1789000001015",
+          "title": "俄罗斯方块",
+          "href": "https://dow.ziyuan.waterfish.ren/download/15.zip",
+          "description": "经典俄罗斯方块｜开源(MIT)｜在线试玩或下载",
+          "about": "经典俄罗斯方块｜开源(MIT) 来源：GitHub BodhiProtocol/tetris｜在线试玩或下载，版权归原作者",
+          "icon": "/assets/images/icon-broken.svg",
+          "previewPath": "/Files/15/page/",
+          "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/15.zip",
+          "enabled": true
+        },
+        {
+          "id": "1789000001016",
+          "title": "扫雷",
+          "href": "https://dow.ziyuan.waterfish.ren/download/16.zip",
+          "description": "经典扫雷｜开源(MIT)｜在线试玩或下载",
+          "about": "经典扫雷｜开源(MIT) 来源：GitHub BodhiProtocol/minesweeper｜在线试玩或下载，版权归原作者",
+          "icon": "/assets/images/icon-broken.svg",
+          "previewPath": "/Files/16/page/",
+          "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/16.zip",
+          "enabled": true
+        },
+        {
+          "id": "1789000001017",
+          "title": "五子棋",
+          "href": "https://dow.ziyuan.waterfish.ren/download/17.zip",
+          "description": "五子棋（双人/人机）｜原创(MIT)｜在线试玩或下载",
+          "about": "五子棋（双人/人机对战）｜原创实现｜MIT 授权｜在线试玩或下载",
+          "icon": "/assets/images/icon-broken.svg",
+          "previewPath": "/Files/17/page/",
+          "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/17.zip",
+          "enabled": true
+        },
+        {
+          "id": "1789000001018",
+          "title": "数独",
+          "href": "https://dow.ziyuan.waterfish.ren/download/18.zip",
+          "description": "数独（难度可选）｜开源(MIT)｜在线试玩或下载",
+          "about": "数独（多难度/多模式）｜开源(MIT) 来源：GitHub dmeldrum6/Color-Sudoku｜在线试玩或下载，版权归原作者",
+          "icon": "/assets/images/icon-broken.svg",
+          "previewPath": "/Files/18/page/",
+          "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/18.zip",
+          "enabled": true
+        }
+      ]
     }
   ]
 }
