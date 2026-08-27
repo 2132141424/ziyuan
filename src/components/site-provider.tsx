@@ -36,13 +36,13 @@ export function SiteProvider({ children }: { children: React.ReactNode }) {
         // 设置默认值
         setSiteInfo({
           basic: {
-            title: 'NavSphere',
-            description: 'A modern navigation platform',
-            keywords: 'navigation, platform, web, management'
+            title: '水鱼之家',
+            description: '汇集网页小游戏、我的世界工具与常用网站导航',
+            keywords: '资源导航,小游戏,我的世界,网页游戏,工具导航,游戏下载'
           },
           appearance: {
-            logo: '/logo.png',
-            favicon: '/favicon.ico',
+            logo: '/assets/images/waterfish-icon.png',
+            favicon: '/assets/images/favicon.ico',
             theme: 'system'
           },
           navigation: {

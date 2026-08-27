@@ -154,7 +154,7 @@ export function AdminLayoutClient({ children, user }: AdminLayoutClientProps) {
                         )}>
                           <div className="relative w-8 h-8 overflow-hidden rounded-md">
                             <img
-                              src="/assets/images/alogo.webp"
+                              src="/assets/images/waterfish-icon.png"
                               alt="Logo"
                               className="object-cover"
                             />
@@ -162,7 +162,7 @@ export function AdminLayoutClient({ children, user }: AdminLayoutClientProps) {
                           {!isSidebarCollapsed && (
                             <div className="flex flex-col">
                               <span className="text-lg font-semibold leading-none tracking-tight">
-                                NavSphere
+                                水鱼之家
                               </span>
                               <span className="text-xs text-muted-foreground mt-1">
                                 管理控制台

@@ -41,14 +41,14 @@ function SignInContent() {
           <div className="flex items-center gap-2">
             <div className="relative w-8 h-8 overflow-hidden rounded-md">
               <img
-                src="/assets/images/alogo.webp"
+                src="/assets/images/waterfish-icon.png"
                 alt="Logo"
                 className="object-cover"
               />
             </div>
             <div className="flex flex-col">
               <span className="text-lg font-semibold leading-none tracking-tight text-white">
-                NavSphere
+                水鱼之家
               </span>
             </div>
           </div>
@@ -56,9 +56,9 @@ function SignInContent() {
         <div className="relative z-20 mt-auto">
           <blockquote className="space-y-2">
             <p className="text-lg">
-              &ldquo;这是一个专为程序员设计的导航网站，集成了常用的开发工具、学习资源和技术社区。&rdquo;
+              &ldquo;水鱼之家资源中心，汇集网页小游戏、我的世界工具与常用网站导航。&rdquo;
             </p>
-            <footer className="text-sm">NavSphere Team</footer>
+            <footer className="text-sm">水鱼之家</footer>
           </blockquote>
         </div>
       </div>

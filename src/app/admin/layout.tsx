@@ -8,12 +8,12 @@ export const runtime = 'edge'
 
 
 export const metadata: Metadata = {
-  title: 'NavSphere Admin',
-  description: 'NavSphere Admin Dashboard',
+  title: '水鱼之家 · 管理后台',
+  description: '水鱼之家 Admin Dashboard',
   icons: {
-    icon: '/assets/images/favicon.webp',
-    shortcut: '/assets/images/favicon.webp',
-    apple: '/assets/images/favicon.webp',
+    icon: '/assets/images/waterfish-icon.png',
+    shortcut: '/assets/images/waterfish-icon.png',
+    apple: '/assets/images/waterfish-icon.png',
   }
 }
 
