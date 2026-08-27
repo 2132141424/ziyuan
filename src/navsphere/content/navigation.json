@@ -71,15 +71,6 @@
           "enabled": true
         },
         {
-          "id": "1781510611011",
-          "title": "FCL 启动器",
-          "href": "https://foldcraftlauncher.cn/#tab2",
-          "description": "FCL 安卓端我的世界启动器｜作者：FCL-Team｜官方",
-          "about": "FCL 安卓端我的世界启动器｜作者：FCL-Team｜官方出品，开源免费",
-          "icon": "/assets/icons/fcl.svg",
-          "enabled": true
-        },
-        {
           "id": "1781510611012",
           "title": "植物大战僵尸·杂交版",
           "href": "https://github.com/nextisme/Plants.vs.Zombies-hybrid/archive/refs/heads/main.zip",
@@ -148,6 +139,15 @@
               "href": "https://hmcl.huangyuhui.net/download/",
               "description": "HMCL 我的世界启动器｜作者：huangyuhui｜官方",
               "icon": "/assets/icons/hmcl.png",
+              "useDefaultIcon": false,
+              "enabled": true
+            },
+            {
+              "id": "1781510611011",
+              "title": "FCL 启动器",
+              "href": "https://foldcraftlauncher.cn/#tab2",
+              "description": "FCL 安卓端我的世界启动器｜作者：FCL-Team｜官方",
+              "icon": "/assets/icons/fcl.svg",
               "useDefaultIcon": false,
               "enabled": true
             }
