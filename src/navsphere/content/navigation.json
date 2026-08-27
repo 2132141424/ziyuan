@@ -39,17 +39,6 @@
           "enabled": true
         },
         {
-          "id": "1781510611014",
-          "title": "HTML5 中国象棋",
-          "href": "https://dow.ziyuan.waterfish.ren/download/14.zip",
-          "description": "HTML5 中国象棋在线对弈｜作者：小星",
-          "about": "HTML5 中国象棋在线对弈｜作者：小星｜来源：水鱼之家资源中心(waterfish.ren)｜点击即可下载，版权归原作者所有",
-          "icon": "/assets/images/icon-broken.svg",
-          "previewPath": "/Files/14/page/",
-          "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/14.zip",
-          "enabled": true
-        },
-        {
           "id": "1781510611016",
           "title": "泰拉世界",
           "href": "http://dl.829965.xyz/pcc",
@@ -166,6 +155,15 @@
               "title": "魔方",
               "href": "https://dow.ziyuan.waterfish.ren/download/13.zip",
               "description": "在线魔方，多种玩法与难度｜作者：源码之家",
+              "icon": "/assets/images/icon-broken.svg",
+              "useDefaultIcon": false,
+              "enabled": true
+            },
+            {
+              "id": "1781510611014",
+              "title": "HTML5 中国象棋",
+              "href": "https://dow.ziyuan.waterfish.ren/download/14.zip",
+              "description": "HTML5 中国象棋在线对弈｜作者：小星",
               "icon": "/assets/images/icon-broken.svg",
               "useDefaultIcon": false,
               "enabled": true
