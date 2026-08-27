@@ -57,8 +57,9 @@ export async function POST(request: NextRequest) {
         if (!response.ok) {
             const error = await response.json()
             console.error('GitHub API Error:', error)
+            const detail = error?.message ? `（${error.message}）` : ''
             return NextResponse.json(
-                { success: false, message: '提交失败，请稍后重试' },
+                { success: false, message: `提交失败，请稍后重试${detail}` },
                 { status: 500 }
             )
         }
