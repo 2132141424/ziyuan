@@ -19,17 +19,6 @@
           "enabled": true
         },
         {
-          "id": "1781510611004",
-          "title": "迷宫",
-          "href": "https://dow.ziyuan.waterfish.ren/download/4.zip",
-          "description": "网页迷宫小游戏｜作者：knightyun｜开源（GitHub 原仓库）",
-          "about": "网页迷宫小游戏｜作者：knightyun（MIT License）｜开源项目（GitHub）｜点击直接下载源码压缩包",
-          "icon": "/assets/images/icon-broken.svg",
-          "previewPath": "/Files/4/page/",
-          "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/4.zip",
-          "enabled": true
-        },
-        {
           "id": "1781510611005",
           "title": "舒尔特方格",
           "href": "https://dow.ziyuan.waterfish.ren/download/5.zip",
@@ -174,6 +163,15 @@
               "title": "贪吃蛇",
               "href": "https://dow.ziyuan.waterfish.ren/download/3.zip",
               "description": "贪吃蛇网页小游戏｜作者：waterfish",
+              "icon": "/assets/images/icon-broken.svg",
+              "useDefaultIcon": false,
+              "enabled": true
+            },
+            {
+              "id": "1781510611004",
+              "title": "迷宫",
+              "href": "https://dow.ziyuan.waterfish.ren/download/4.zip",
+              "description": "网页迷宫小游戏｜作者：knightyun｜开源（GitHub 原仓库）",
               "icon": "/assets/images/icon-broken.svg",
               "useDefaultIcon": false,
               "enabled": true
