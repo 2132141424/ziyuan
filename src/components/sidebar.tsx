@@ -80,31 +80,32 @@ export function Sidebar({ className, navigationData, siteInfo, onClose }: Sideba
   return (
     <div className={cn("w-64 bg-background", className)}>
       <div className="flex h-14 items-center px-4">
-        <Link href="/" className="flex items-center gap-2 font-semibold">
-          {siteInfo.appearance.logo ? (
-            <Image
-              src={siteInfo.appearance.logo}
-              alt={siteInfo.basic.title}
-              width={24}
-              height={24}
-              className="h-6 w-6"
-            />
-          ) : (
-            <LucideIcons.Globe className="h-6 w-6" />
-          )}
-          <span className="flex items-center gap-1.5 whitespace-nowrap">
-            <a
-              href="https://waterfish.ren"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-foreground hover:text-primary transition-colors"
-            >
-              水鱼之家
-            </a>
-            <span className="text-muted-foreground">/</span>
-            <span className="text-primary">资源中心</span>
-          </span>
-        </Link>
+        <div className="flex items-center gap-2 font-semibold">
+          <a
+            href="https://waterfish.ren"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
+            aria-label="水鱼之家首页"
+          >
+            {siteInfo.appearance.logo ? (
+              <Image
+                src={siteInfo.appearance.logo}
+                alt={siteInfo.basic.title}
+                width={24}
+                height={24}
+                className="h-6 w-6"
+              />
+            ) : (
+              <LucideIcons.Globe className="h-6 w-6" />
+            )}
+            <span className="whitespace-nowrap">水鱼之家</span>
+          </a>
+          <span className="text-muted-foreground">/</span>
+          <Link href="/" className="text-primary hover:text-primary/80 transition-colors whitespace-nowrap">
+            资源中心
+          </Link>
+        </div>
 
         {/* 移动模式下的关闭按钮 */}
         {onClose && (
