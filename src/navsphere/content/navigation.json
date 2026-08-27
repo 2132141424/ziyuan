@@ -71,15 +71,6 @@
           "enabled": true
         },
         {
-          "id": "1781510611009",
-          "title": "PCL2 启动器",
-          "href": "https://ltcat.lanzouv.com/b0aj6gsid",
-          "description": "PCL2 我的世界启动器｜作者：龙腾猫跃｜官方网盘（提取码 pcl2）",
-          "about": "PCL2 我的世界启动器｜作者：龙腾猫跃｜官方发布（爱发电网盘下载，提取码 pcl2）",
-          "icon": "/assets/images/icon-broken.svg",
-          "enabled": true
-        },
-        {
           "id": "1781510611010",
           "title": "HMCL 启动器",
           "href": "https://hmcl.huangyuhui.net/download/",
@@ -148,6 +139,15 @@
               "href": "https://eaglercraft.ir/zh/downloads/",
               "description": "网页版我的世界（Eaglercraft）｜作者：eaglercraft｜官方下载",
               "icon": "/assets/icons/eaglercraft.png",
+              "useDefaultIcon": false,
+              "enabled": true
+            },
+            {
+              "id": "1781510611009",
+              "title": "PCL2 启动器",
+              "href": "https://ltcat.lanzouv.com/b0aj6gsid",
+              "description": "PCL2 我的世界启动器｜作者：龙腾猫跃｜官方网盘（提取码 pcl2）",
+              "icon": "/assets/images/icon-broken.svg",
               "useDefaultIcon": false,
               "enabled": true
             }
