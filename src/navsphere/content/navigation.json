@@ -53,15 +53,6 @@
           "enabled": true
         },
         {
-          "id": "1781510611006",
-          "title": "我的世界 HTML 版",
-          "href": "https://eaglercraft.ir/zh/downloads/",
-          "description": "网页版我的世界（Eaglercraft）｜作者：eaglercraft｜官方下载",
-          "about": "网页版我的世界 Eaglercraft｜作者：eaglercraft｜官方出品，浏览器内即可游玩，支持多人联机",
-          "icon": "/assets/icons/eaglercraft.png",
-          "enabled": true
-        },
-        {
           "id": "1781510611007",
           "title": "传说之下·汉化版",
           "href": "https://download.waterfish.ren/download/7.7z",
@@ -150,7 +141,17 @@
           "icon": "Box",
           "description": "",
           "enabled": true,
-          "items": []
+          "items": [
+            {
+              "id": "1781510611006",
+              "title": "我的世界 HTML 版",
+              "href": "https://eaglercraft.ir/zh/downloads/",
+              "description": "网页版我的世界（Eaglercraft）｜作者：eaglercraft｜官方下载",
+              "icon": "/assets/icons/eaglercraft.png",
+              "useDefaultIcon": false,
+              "enabled": true
+            }
+          ]
         }
       ]
     },
