@@ -112,23 +112,21 @@ export function Sidebar({ className, navigationData, siteInfo, onClose }: Sideba
       <ScrollArea className="h-[calc(100vh-3.5rem)] px-3 py-2">
         <div className="space-y-1">
           <div className="py-2 border-b border-border/60 mb-1">
-            <div className="flex flex-col gap-1">
+            <div className="flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm font-semibold">
+              <LucideIcons.Fish className="h-4 w-4 text-primary" />
               <a
-                href="https://waterfish.ren/"
+                href="https://waterfish.ren"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 rounded-md px-2 py-1.5 text-sm font-medium text-muted-foreground hover:bg-accent hover:text-foreground"
+                className="text-foreground hover:text-primary transition-colors"
               >
-                <LucideIcons.Fish className="h-4 w-4" />
                 水鱼之家
               </a>
+              <span className="text-muted-foreground">/</span>
               <a
-                href="https://ziyuan.waterfish.ren/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 rounded-md px-2 py-1.5 text-sm font-medium text-muted-foreground hover:bg-accent hover:text-foreground"
+                href="/"
+                className="text-primary hover:text-primary/80 transition-colors"
               >
-                <LucideIcons.Building2 className="h-4 w-4" />
                 资源中心
               </a>
             </div>

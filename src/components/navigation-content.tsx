@@ -187,12 +187,12 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
                     className="hover:bg-accent hover:text-accent-foreground"
                   >
                     <Info className="h-4 w-4 mr-2" />
-                    关于本网站
+                    关于
                   </Button>
                 </DialogTrigger>
                 <DialogContent>
                   <DialogHeader>
-                    <DialogTitle>关于本网站</DialogTitle>
+                    <DialogTitle>关于</DialogTitle>
                     <DialogDescription className="whitespace-pre-line leading-relaxed text-foreground/80">
                       {siteData?.basic?.description}
                     </DialogDescription>
