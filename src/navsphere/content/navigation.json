@@ -211,6 +211,116 @@
               "previewPath": "/Files/18/page/",
               "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/18.zip",
               "enabled": true
+            },
+            {
+              "id": "1789000001019",
+              "title": "国际象棋",
+              "href": "https://dow.ziyuan.waterfish.ren/download/19.zip",
+              "description": "国际象棋｜人机对弈｜原创(MIT)｜在线试玩或下载",
+              "about": "国际象棋（人机对弈）｜原创实现｜MIT 授权｜在线试玩或下载",
+              "icon": "/assets/images/icon-broken.svg",
+              "previewPath": "/Files/19/page/",
+              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/19.zip",
+              "enabled": true
+            },
+            {
+              "id": "1789000001020",
+              "title": "飞机大战",
+              "href": "https://dow.ziyuan.waterfish.ren/download/20.zip",
+              "description": "飞机大战｜太空射击｜原创(MIT)｜在线试玩或下载",
+              "about": "飞机大战（太空射击，得分升级波次）｜原创实现｜MIT 授权｜在线试玩或下载",
+              "icon": "/assets/images/icon-broken.svg",
+              "previewPath": "/Files/20/page/",
+              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/20.zip",
+              "enabled": true
+            },
+            {
+              "id": "1789000001021",
+              "title": "华容道",
+              "href": "https://dow.ziyuan.waterfish.ren/download/21.zip",
+              "description": "华容道｜曹操出逃滑块谜题｜原创(MIT)｜在线试玩或下载",
+              "about": "华容道（经典滑块谜题，助曹操出逃）｜原创实现｜MIT 授权｜在线试玩或下载",
+              "icon": "/assets/images/icon-broken.svg",
+              "previewPath": "/Files/21/page/",
+              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/21.zip",
+              "enabled": true
+            },
+            {
+              "id": "1789000001022",
+              "title": "打砖块",
+              "href": "https://dow.ziyuan.waterfish.ren/download/22.zip",
+              "description": "打砖块｜Breakout 弹球击砖｜原创(MIT)｜在线试玩或下载",
+              "about": "打砖块（Breakout，反弹小球击碎全部砖块）｜原创实现｜MIT 授权｜在线试玩或下载",
+              "icon": "/assets/images/icon-broken.svg",
+              "previewPath": "/Files/22/page/",
+              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/22.zip",
+              "enabled": true
+            },
+            {
+              "id": "1789000001023",
+              "title": "黑白棋",
+              "href": "https://dow.ziyuan.waterfish.ren/download/23.zip",
+              "description": "黑白棋｜Othello 人机对战｜原创(MIT)｜在线试玩或下载",
+              "about": "黑白棋（Othello，人机对战，翻转夹住棋子）｜原创实现｜MIT 授权｜在线试玩或下载",
+              "icon": "/assets/images/icon-broken.svg",
+              "previewPath": "/Files/23/page/",
+              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/23.zip",
+              "enabled": true
+            },
+            {
+              "id": "1789000001024",
+              "title": "记忆翻牌",
+              "href": "https://dow.ziyuan.waterfish.ren/download/24.zip",
+              "description": "记忆翻牌｜图案配对记忆游戏｜原创(MIT)｜在线试玩或下载",
+              "about": "记忆翻牌（翻牌找相同图案配对，多难度）｜原创实现｜MIT 授权｜在线试玩或下载",
+              "icon": "/assets/images/icon-broken.svg",
+              "previewPath": "/Files/24/page/",
+              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/24.zip",
+              "enabled": true
+            },
+            {
+              "id": "1789000001025",
+              "title": "24点",
+              "href": "https://dow.ziyuan.waterfish.ren/download/25.zip",
+              "description": "24点｜数学速算｜原创(MIT)｜在线试玩或下载",
+              "about": "24点（四张牌加减乘除凑出24，支持求解）｜原创实现｜MIT 授权｜在线试玩或下载",
+              "icon": "/assets/images/icon-broken.svg",
+              "previewPath": "/Files/25/page/",
+              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/25.zip",
+              "enabled": true
+            },
+            {
+              "id": "1789000001026",
+              "title": "井字棋",
+              "href": "https://dow.ziyuan.waterfish.ren/download/26.zip",
+              "description": "井字棋｜三子连线｜原创(MIT)｜在线试玩或下载",
+              "about": "井字棋（人机/双人对战，AI 基于极小极大）｜原创实现｜MIT 授权｜在线试玩或下载",
+              "icon": "/assets/images/icon-broken.svg",
+              "previewPath": "/Files/26/page/",
+              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/26.zip",
+              "enabled": true
+            },
+            {
+              "id": "1789000001027",
+              "title": "弹球",
+              "href": "https://dow.ziyuan.waterfish.ren/download/27.zip",
+              "description": "弹球｜Pong 人机对战｜原创(MIT)｜在线试玩或下载",
+              "about": "弹球（Pong，与 AI 对抗的经典乒乓球）｜原创实现｜MIT 授权｜在线试玩或下载",
+              "icon": "/assets/images/icon-broken.svg",
+              "previewPath": "/Files/27/page/",
+              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/27.zip",
+              "enabled": true
+            },
+            {
+              "id": "1789000001028",
+              "title": "推箱子",
+              "href": "https://dow.ziyuan.waterfish.ren/download/28.zip",
+              "description": "推箱子｜Sokoban 多关卡｜原创(MIT)｜在线试玩或下载",
+              "about": "推箱子（Sokoban，多关卡，推箱到全部目标点）｜原创实现｜MIT 授权｜在线试玩或下载",
+              "icon": "/assets/images/icon-broken.svg",
+              "previewPath": "/Files/28/page/",
+              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/28.zip",
+              "enabled": true
             }
           ]
         }
