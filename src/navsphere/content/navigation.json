@@ -143,7 +143,16 @@
           "enabled": true
         }
       ],
-      "subCategories": []
+      "subCategories": [
+        {
+          "id": "104b713c-1316-472e-89c4-fd1f4e64d488",
+          "title": "我的世界",
+          "icon": "Box",
+          "description": "",
+          "enabled": true,
+          "items": []
+        }
+      ]
     },
     {
       "id": "1787800862775",
