@@ -25,7 +25,7 @@ function SignInContent() {
       await signIn('github', {
         callbackUrl,
         redirect: true,
-        scope: 'repo'
+        scope: 'read:user user:email repo'
       })
     } catch (error) {
       setIsLoading(false)
