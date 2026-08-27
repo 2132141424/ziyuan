@@ -71,15 +71,6 @@
           "enabled": true
         },
         {
-          "id": "1781510611010",
-          "title": "HMCL 启动器",
-          "href": "https://hmcl.huangyuhui.net/download/",
-          "description": "HMCL 我的世界启动器｜作者：huangyuhui｜官方",
-          "about": "HMCL 我的世界启动器｜作者：huangyuhui｜官方出品，多平台开源",
-          "icon": "/assets/icons/hmcl.png",
-          "enabled": true
-        },
-        {
           "id": "1781510611011",
           "title": "FCL 启动器",
           "href": "https://foldcraftlauncher.cn/#tab2",
@@ -148,6 +139,15 @@
               "href": "https://ltcat.lanzouv.com/b0aj6gsid",
               "description": "PCL2 我的世界启动器｜作者：龙腾猫跃｜官方网盘（提取码 pcl2）",
               "icon": "/assets/images/icon-broken.svg",
+              "useDefaultIcon": false,
+              "enabled": true
+            },
+            {
+              "id": "1781510611010",
+              "title": "HMCL 启动器",
+              "href": "https://hmcl.huangyuhui.net/download/",
+              "description": "HMCL 我的世界启动器｜作者：huangyuhui｜官方",
+              "icon": "/assets/icons/hmcl.png",
               "useDefaultIcon": false,
               "enabled": true
             }
