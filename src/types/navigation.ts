@@ -7,6 +7,8 @@ export interface NavigationSubItemRaw {
   icon?: string
   useDefaultIcon?: boolean
   about?: string
+  previewPath?: string
+  downloadUrl?: string
   enabled: boolean
 }
 
@@ -19,6 +21,8 @@ export interface NavigationSubItem {
   icon?: string
   useDefaultIcon?: boolean
   about?: string
+  previewPath?: string
+  downloadUrl?: string
   enabled: boolean
 }
 

@@ -30,6 +30,8 @@ export function processNavigationSubItem(item: NavigationSubItemRaw): Navigation
         icon: item.icon,
         useDefaultIcon: item.useDefaultIcon,
         about: item.about,
+        previewPath: item.previewPath,
+        downloadUrl: item.downloadUrl,
         enabled: item.enabled
     }
 }

@@ -14,6 +14,8 @@
           "description": "2048 网页小游戏｜作者：waterfish",
           "about": "2048 网页小游戏｜作者：waterfish｜来源：水鱼之家资源中心(waterfish.ren)｜点击即可下载，版权归原作者所有",
           "icon": "/assets/images/icon-broken.svg",
+          "previewPath": "/Files/1/page/",
+          "downloadUrl": "https://download.waterfish.ren/download/1.zip",
           "enabled": true
         },
         {
@@ -23,6 +25,8 @@
           "description": "植物大战僵尸 HTML 版｜作者：Azure12355｜开源（GitHub 原仓库）",
           "about": "植物大战僵尸 HTML 版｜作者：Azure12355｜开源项目（GitHub）｜点击直接下载源码压缩包，版权归原作者",
           "icon": "/assets/images/icon-broken.svg",
+          "previewPath": "/Files/2/page/",
+          "downloadUrl": "https://github.com/Azure12355/game-plant-vs-zombies/archive/refs/heads/main.zip",
           "enabled": true
         },
         {
@@ -32,6 +36,8 @@
           "description": "贪吃蛇网页小游戏｜作者：waterfish",
           "about": "贪吃蛇网页小游戏｜作者：waterfish｜来源：水鱼之家资源中心(waterfish.ren)｜点击即可下载，版权归原作者所有",
           "icon": "/assets/images/icon-broken.svg",
+          "previewPath": "/Files/3/page/",
+          "downloadUrl": "https://download.waterfish.ren/download/3.zip",
           "enabled": true
         },
         {
@@ -41,6 +47,8 @@
           "description": "网页迷宫小游戏｜作者：knightyun｜开源（GitHub 原仓库）",
           "about": "网页迷宫小游戏｜作者：knightyun（MIT License）｜开源项目（GitHub）｜点击直接下载源码压缩包",
           "icon": "/assets/images/icon-broken.svg",
+          "previewPath": "/Files/4/page/",
+          "downloadUrl": "https://github.com/knightyun/maze-game/archive/refs/heads/master.zip",
           "enabled": true
         },
         {
@@ -50,6 +58,8 @@
           "description": "舒尔特方格注意力训练｜作者：waterfish",
           "about": "舒尔特方格注意力训练｜作者：waterfish｜来源：水鱼之家资源中心(waterfish.ren)｜点击即可下载，版权归原作者所有",
           "icon": "/assets/images/icon-broken.svg",
+          "previewPath": "/Files/5/page/",
+          "downloadUrl": "https://download.waterfish.ren/download/5.zip",
           "enabled": true
         },
         {
@@ -59,6 +69,7 @@
           "description": "传说之下（Undertale）汉化版｜汉化：星云散落｜版权归原开发商与汉化者，此为第三方汉化，仅供学习交流",
           "about": "传说之下（Undertale）汉化版｜汉化：星云散落｜版权归原开发商与汉化者，此为第三方汉化补丁，仅供学习交流，请支持正版",
           "icon": "/assets/images/icon-broken.svg",
+          "downloadUrl": "https://download.waterfish.ren/download/7.7z",
           "enabled": true
         },
         {
@@ -68,6 +79,8 @@
           "description": "在线抽奖转盘｜作者：waterfish",
           "about": "在线抽奖转盘｜作者：waterfish｜来源：水鱼之家资源中心(waterfish.ren)｜点击即可下载，版权归原作者所有",
           "icon": "/assets/images/icon-broken.svg",
+          "previewPath": "/Files/8/page/",
+          "downloadUrl": "https://download.waterfish.ren/download/8.zip",
           "enabled": true
         },
         {
@@ -77,6 +90,7 @@
           "description": "植物大战僵尸杂交版｜制作：潜艇伟伟迷｜收录：nextisme（GitHub）",
           "about": "植物大战僵尸·杂交版｜制作：潜艇伟伟迷｜收录于开源仓库 nextisme（GitHub）｜点击直接下载源码压缩包，版权归原制作人",
           "icon": "/assets/images/icon-broken.svg",
+          "downloadUrl": "https://github.com/nextisme/Plants.vs.Zombies-hybrid/archive/refs/heads/main.zip",
           "enabled": true
         },
         {
@@ -86,6 +100,8 @@
           "description": "在线魔方，多种玩法与难度｜作者：源码之家",
           "about": "在线魔方，多种玩法与难度｜作者：源码之家｜来源：水鱼之家资源中心(waterfish.ren)｜点击即可下载，版权归原作者所有",
           "icon": "/assets/images/icon-broken.svg",
+          "previewPath": "/Files/13/page/",
+          "downloadUrl": "https://download.waterfish.ren/download/13.zip",
           "enabled": true
         },
         {
@@ -95,6 +111,8 @@
           "description": "HTML5 中国象棋在线对弈｜作者：小星",
           "about": "HTML5 中国象棋在线对弈｜作者：小星｜来源：水鱼之家资源中心(waterfish.ren)｜点击即可下载，版权归原作者所有",
           "icon": "/assets/images/icon-broken.svg",
+          "previewPath": "/Files/14/page/",
+          "downloadUrl": "https://download.waterfish.ren/download/14.zip",
           "enabled": true
         },
         {
