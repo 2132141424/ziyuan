@@ -151,7 +151,17 @@
       "icon": "LayoutGrid",
       "description": "",
       "enabled": true,
-      "items": [],
+      "items": [
+        {
+          "id": "site_1787801311047_3t7cd6o51",
+          "title": "图吧工具箱新版下载 - 免费硬件检测工具官方下载",
+          "href": "https://www.tbtool.cn/download/",
+          "description": "图吧工具箱下载链接，免费、纯净、全面的硬件检测工具合集。集成CPU、显卡、内存、硬盘等检测工具，助你轻松诊断电脑性能。立即下载体验。",
+          "icon": "/assets/favicon_1787801254817.png",
+          "useDefaultIcon": false,
+          "enabled": true
+        }
+      ],
       "subCategories": []
     }
   ]
