@@ -25,17 +25,25 @@ function splitTitle(title: string): [string, string] {
   return [title, '']
 }
 
+// 兼容 ?id=<id> 与 ?=<id> 两种形式
+function extractId(
+  sp: Record<string, string | string[] | undefined>
+): string {
+  if (typeof sp.id === 'string' && sp.id) return sp.id
+  if (typeof sp[''] === 'string' && sp['']) return sp['']
+  const v = Object.values(sp).find(
+    (x): x is string => typeof x === 'string'
+  )
+  return v ?? ''
+}
+
 export async function generateMetadata({
   searchParams,
 }: {
   searchParams: Promise<Record<string, string | string[] | undefined>>
 }): Promise<Metadata> {
   const sp = await searchParams
-  const raw =
-    (typeof sp.id === 'string' && sp.id) ||
-    (typeof sp[''] === 'string' && sp['']) ||
-    Object.values(sp).find((v) => typeof v === 'string') ||
-    ''
+  const raw = extractId(sp)
   const item = raw ? findItem(raw) : undefined
   return {
     title: item ? `下载${item.title}` : '资源 · 水鱼之家',
@@ -48,11 +56,7 @@ export default async function XuanChuanPage({
   searchParams: Promise<Record<string, string | string[] | undefined>>
 }) {
   const sp = await searchParams
-  const raw =
-    (typeof sp.id === 'string' && sp.id) ||
-    (typeof sp[''] === 'string' && sp['']) ||
-    Object.values(sp).find((v) => typeof v === 'string') ||
-    ''
+  const raw = extractId(sp)
   const item = raw ? findItem(raw) : undefined
 
   const [title, subTitle] = splitTitle(item?.title ?? '资源中心')
