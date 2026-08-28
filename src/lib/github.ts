@@ -11,13 +11,23 @@ export async function getFileContent(path: string) {
     const token = session?.user?.accessToken
 
     const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}?ref=${branch}`
-    const response = await fetch(apiUrl, {
-      headers: {
-        Accept: 'application/vnd.github.v3.raw',
-        Authorization: token ? `token ${token}` : '',
-        'User-Agent': 'NavSphere',
-      },
-    })
+
+    const ghFetch = (tok: string) =>
+      fetch(apiUrl, {
+        headers: {
+          Accept: 'application/vnd.github.v3.raw',
+          Authorization: tok ? `token ${tok}` : '',
+          'User-Agent': 'NavSphere',
+          cache: 'no-store',
+        },
+      })
+
+    // 带用户 token 被 GitHub 拒绝(401/403)时回退匿名读取：
+    // 公开仓库可直接匿名读取，避免失效 token 导致后台读取为空数组
+    let response = await ghFetch(token || '')
+    if (token && (response.status === 401 || response.status === 403)) {
+      response = await ghFetch('')
+    }
 
     if (response.status === 404) {
       console.log(`File not found: ${path}, returning default data`)
