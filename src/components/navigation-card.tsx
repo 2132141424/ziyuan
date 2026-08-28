@@ -77,7 +77,7 @@ export function NavigationCard({ item, siteConfig }: NavigationCardProps) {
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger asChild>
-          <Card className="group relative overflow-hidden transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
+          <Card data-card-id={item.id} className="group relative overflow-hidden transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg card-focusable">
             <Link
               href={item.href}
               target={linkTarget}

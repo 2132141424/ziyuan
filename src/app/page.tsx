@@ -1,4 +1,6 @@
+import { Suspense } from 'react'
 import { NavigationContent } from '@/components/navigation-content'
+import { CardFocus } from '@/components/card-focus'
 import { Metadata } from 'next/types'
 import { ScrollToTop } from '@/components/ScrollToTop'
 import { Container } from '@/components/ui/container'
@@ -29,9 +31,14 @@ export default function HomePage() {
   const { navigationData, siteData } = getData()
 
   return (
-    <Container>
-      <NavigationContent navigationData={navigationData} siteData={siteData} />
-      <ScrollToTop />
-    </Container>
+    <>
+      <Suspense fallback={null}>
+        <CardFocus />
+      </Suspense>
+      <Container>
+        <NavigationContent navigationData={navigationData} siteData={siteData} />
+        <ScrollToTop />
+      </Container>
+    </>
   )
 }
