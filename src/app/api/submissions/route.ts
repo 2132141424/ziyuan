@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
             new URL(data.url)
         } catch {
             return NextResponse.json(
-                { success: false, message: '请输入有效的网站地址' },
+                { success: false, message: '请输入有效的资源地址' },
                 { status: 400 }
             )
         }

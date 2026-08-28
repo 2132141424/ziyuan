@@ -8,8 +8,8 @@ import { Button } from '@/registry/new-york/ui/button'
 import { NavigationData } from '@/types/navigation'
 
 export const metadata: Metadata = {
-    title: '网站投稿',
-    description: '向水鱼之家投稿优质网站，分享好资源'
+    title: '资源投稿',
+    description: '向水鱼之家投稿优质资源，分享好内容'
 }
 
 export default function SubmitPage() {
@@ -35,15 +35,15 @@ export default function SubmitPage() {
                     <ul className="space-y-2 text-sm text-muted-foreground">
                         <li className="flex gap-2">
                             <span className="text-primary">•</span>
-                            <span>请确保提交的网站内容合法、健康、有价值</span>
+                            <span>请确保提交的资源内容合法、健康、有价值</span>
                         </li>
                         <li className="flex gap-2">
                             <span className="text-primary">•</span>
-                            <span>网站地址请填写完整的 URL（包含 https://）</span>
+                            <span>资源地址请填写完整的 URL（包含 https://）</span>
                         </li>
                         <li className="flex gap-2">
                             <span className="text-primary">•</span>
-                            <span>网站描述请简洁明了，突出网站的核心功能和特点</span>
+                            <span>资源描述请简洁明了，突出资源的核心功能和特点</span>
                         </li>
                         <li className="flex gap-2">
                             <span className="text-primary">•</span>

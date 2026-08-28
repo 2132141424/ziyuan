@@ -153,7 +153,7 @@ export default function SubmissionsPage() {
                 <div>
                     <h1 className="text-2xl font-bold tracking-tight">投稿审核</h1>
                     <p className="text-muted-foreground">
-                        审核用户提交的网站投稿
+                        审核用户提交的资源投稿
                     </p>
                 </div>
                 <Button
@@ -210,8 +210,8 @@ export default function SubmissionsPage() {
                                     <TableHeader>
                                         <TableRow>
                                             <TableHead className="w-12">#</TableHead>
-                                            <TableHead>网站名称</TableHead>
-                                            <TableHead>网站地址</TableHead>
+                                            <TableHead>资源名称</TableHead>
+                                            <TableHead>资源地址</TableHead>
                                             <TableHead>分类</TableHead>
                                             <TableHead>状态</TableHead>
                                             <TableHead>提交时间</TableHead>
@@ -298,11 +298,11 @@ export default function SubmissionsPage() {
                         <div className="space-y-4">
                             <div className="grid grid-cols-2 gap-4">
                                 <div>
-                                    <label className="text-sm font-medium text-muted-foreground">网站名称</label>
+                                    <label className="text-sm font-medium text-muted-foreground">资源名称</label>
                                     <p className="mt-1">{selectedSubmission.submissionData.title}</p>
                                 </div>
                                 <div>
-                                    <label className="text-sm font-medium text-muted-foreground">网站地址</label>
+                                    <label className="text-sm font-medium text-muted-foreground">资源地址</label>
                                     <p className="mt-1">
                                         <a
                                             href={selectedSubmission.submissionData.url}
@@ -318,7 +318,7 @@ export default function SubmissionsPage() {
                             </div>
 
                             <div>
-                                <label className="text-sm font-medium text-muted-foreground">网站描述</label>
+                                <label className="text-sm font-medium text-muted-foreground">资源描述</label>
                                 <p className="mt-1 p-3 bg-muted rounded-lg">
                                     {selectedSubmission.submissionData.description}
                                 </p>

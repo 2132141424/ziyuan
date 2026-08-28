@@ -158,7 +158,7 @@ export async function PATCH(request: NextRequest, { params }: RouteParams) {
             // 添加评论
             await addIssueComment(
                 issueNumber,
-                `✅ **投稿已通过**\n\n该网站已成功添加到导航列表。\n\n审核人: @${session.user.name || 'admin'}`
+                `✅ **投稿已通过**\n\n该资源已成功添加到导航列表。\n\n审核人: @${session.user.name || 'admin'}`
             )
 
             // 关闭 Issue
@@ -166,7 +166,7 @@ export async function PATCH(request: NextRequest, { params }: RouteParams) {
 
             return NextResponse.json({
                 success: true,
-                message: '投稿已通过，网站已添加到导航列表'
+                message: '投稿已通过，资源已添加到导航列表'
             })
 
         } else {
@@ -175,7 +175,7 @@ export async function PATCH(request: NextRequest, { params }: RouteParams) {
 
             await addIssueComment(
                 issueNumber,
-                `❌ **投稿已拒绝**\n\n${reason ? `拒绝原因: ${reason}` : '感谢您的投稿，但该网站暂不符合我们的收录标准。'}\n\n审核人: @${session.user.name || 'admin'}`
+                `❌ **投稿已拒绝**\n\n${reason ? `拒绝原因: ${reason}` : '感谢您的投稿，但该资源暂不符合我们的收录标准。'}\n\n审核人: @${session.user.name || 'admin'}`
             )
 
             await closeIssue(issueNumber)

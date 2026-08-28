@@ -143,11 +143,11 @@ export function SubmissionForm({ navigationData }: SubmissionFormProps) {
                 )}
 
                 <form onSubmit={handleSubmit} className="space-y-6">
-                    {/* 网站名称 */}
+                    {/* 资源名称 */}
                     <div className="space-y-2">
                         <Label htmlFor="title" className="flex items-center gap-2 text-sm font-medium">
                             <Tag className="h-4 w-4 text-muted-foreground" />
-                            网站名称 <span className="text-red-500">*</span>
+                            资源名称 <span className="text-red-500">*</span>
                         </Label>
                         <Input
                             id="title"
@@ -159,11 +159,11 @@ export function SubmissionForm({ navigationData }: SubmissionFormProps) {
                         />
                     </div>
 
-                    {/* 网站地址 */}
+                    {/* 资源地址 */}
                     <div className="space-y-2">
                         <Label htmlFor="url" className="flex items-center gap-2 text-sm font-medium">
                             <Globe className="h-4 w-4 text-muted-foreground" />
-                            网站地址 <span className="text-red-500">*</span>
+                            资源地址 <span className="text-red-500">*</span>
                         </Label>
                         <Input
                             id="url"
@@ -176,15 +176,15 @@ export function SubmissionForm({ navigationData }: SubmissionFormProps) {
                         />
                     </div>
 
-                    {/* 网站描述 */}
+                    {/* 资源描述 */}
                     <div className="space-y-2">
                         <Label htmlFor="description" className="flex items-center gap-2 text-sm font-medium">
                             <FileText className="h-4 w-4 text-muted-foreground" />
-                            网站描述 <span className="text-red-500">*</span>
+                            资源描述 <span className="text-red-500">*</span>
                         </Label>
                         <Textarea
                             id="description"
-                            placeholder="简要描述这个网站的功能和特点..."
+                            placeholder="简要描述这个资源的功能和特点..."
                             value={formData.description}
                             onChange={(e) => setFormData({ ...formData, description: e.target.value })}
                             required
