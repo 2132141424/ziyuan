@@ -224,6 +224,24 @@
         }
       ],
       "subCategories": []
+    },
+    {
+      "id": "1787803000001",
+      "title": "其他",
+      "icon": "Blocks",
+      "description": "其他优质资源与工具，跳转均指向原作者/官方出处；版权归各自所有者，本页仅作导航链接，不存储、不转发资源文件。",
+      "enabled": true,
+      "items": [
+        {
+          "id": "site_1787803000001_jiyu",
+          "title": "JiYuTrainer",
+          "href": "https://github.com/imengyu/JiYuTrainer",
+          "description": "极域电子教室（极域）解除限制小工具｜开源（GitHub imengyu/JiYuTrainer）",
+          "about": "JiYuTrainer（极域电子教室解除限制小工具）｜开源项目（GitHub imengyu/JiYuTrainer）｜版权归原作者，本页仅作导航链接",
+          "useDefaultIcon": true,
+          "enabled": true
+        }
+      ]
     }
   ]
 }
