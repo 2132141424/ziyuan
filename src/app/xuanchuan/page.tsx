@@ -60,8 +60,8 @@ export default async function XuanChuanPage({
   const item = raw ? findItem(raw) : undefined
 
   const [title, subTitle] = splitTitle(item?.title ?? '资源中心')
-  // 「立刻下载」跳回资源中心并聚焦对应卡片，由卡片上的下载按钮完成下载
-  const downloadHref = raw ? `/?focus=${raw}` : '/'
+  // 「立刻下载」：有下载源时直接跳转下载；否则先跳回资源中心聚焦该卡片
+  const downloadHref = item?.downloadUrl || (raw ? `/?focus=${raw}` : '/')
   const hint = item?.description?.split('｜')[0] || ''
 
   return (

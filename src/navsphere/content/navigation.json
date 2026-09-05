@@ -238,8 +238,12 @@
           "href": "https://github.com/imengyu/JiYuTrainer",
           "description": "JiYuTrainer",
           "about": "JiYuTrainer（极域电子教室解除限制小工具）｜开源项目（GitHub imengyu/JiYuTrainer）｜版权归原作者，本页仅作导航链接",
-          "useDefaultIcon": true,
-          "enabled": true
+          "useDefaultIcon": false,
+          "enabled": true,
+          "icon": "/assets/images/jiyutrainer.png",
+          "projectUrl": "https://github.com/imengyu/JiYuTrainer",
+          "githubUrl": "https://github.com/imengyu/JiYuTrainer/releases/download/1.7.6/JiYuTrainer.exe",
+          "downloadUrl": "https://github.com/imengyu/JiYuTrainer/releases/download/1.7.6/JiYuTrainer.exe"
         }
       ]
     }
