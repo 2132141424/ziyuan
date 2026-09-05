@@ -9,6 +9,7 @@ import { Icons } from '@/components/icons'
 import { PREVIEW_BASE_URL } from '@/config/site'
 import type { NavigationSubItem } from '@/types/navigation'
 import { SiteFavicon } from '@/components/site-favicon'
+import { githubReachable, ensureGithubPing } from '@/lib/github-ping'
 import type { SiteConfig } from '@/types/site'
 import {
   Tooltip,
@@ -66,26 +67,8 @@ function ActionButton({
   )
 }
 
-// 优先 GitHub 源下载；切 GitHub 连不上（网络层失败/超时）时降级到备用源（dow）
-async function downloadWithFallback(
-  e: ReactMouseEvent<HTMLAnchorElement>,
-  primary: string,
-  fallback: string
-) {
-  e.preventDefault()
-  const ctrl = new AbortController()
-  const timer = setTimeout(() => ctrl.abort(), 6000)
-  let ok = false
-  try {
-    await fetch(primary, { method: 'HEAD', mode: 'no-cors', signal: ctrl.signal })
-    ok = true
-  } catch {
-    ok = false
-  }
-  clearTimeout(timer)
-  window.open(ok ? primary : fallback, '_blank', 'noopener')
-}
-
+// 下载统一走纯链接跳转，避免点击时前端 fetch 触发本地网络访问弹窗。
+// GitHub 是否可选由打开网站时的静默 ping 决定（github-ping），不可达则用 dow 备用源。
 export function NavigationCard({ item, siteConfig }: NavigationCardProps) {
   // 获取链接打开方式，默认为新窗口
   const linkTarget = siteConfig?.navigation?.linkTarget || '_blank'
@@ -97,8 +80,12 @@ export function NavigationCard({ item, siteConfig }: NavigationCardProps) {
     : item.projectUrl || item.href
   const primaryLabel = canPreview ? '在线预览' : '项目页面'
   const primaryIcon = canPreview ? Play : Globe
-  const downloadHref = item.downloadUrl || item.href
   const githubUrl = item.githubUrl
+  const downloadHref = item.downloadUrl || item.href
+  // 打开网站时静默 ping GitHub；可直连且该项有 github 源则走 github，否则用 dow
+  ensureGithubPing()
+  const effectiveDownloadHref =
+    githubUrl && githubReachable() ? githubUrl : downloadHref
 
   return (
     <TooltipProvider>
@@ -160,15 +147,10 @@ export function NavigationCard({ item, siteConfig }: NavigationCardProps) {
                 <ActionButton href={primaryHref} icon={primaryIcon} label={primaryLabel} />
               )}
               <ActionButton
-                href={githubUrl || downloadHref}
+                href={effectiveDownloadHref}
                 icon={Download}
                 label="下载"
                 variant="outline"
-                onClick={
-                  githubUrl
-                    ? (e) => downloadWithFallback(e, githubUrl, downloadHref)
-                    : undefined
-                }
               />
             </div>
           </Card>
