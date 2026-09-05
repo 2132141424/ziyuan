@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Info, Play, Globe, Download, type LucideIcon } from 'lucide-react'
+import type { MouseEvent as ReactMouseEvent } from 'react'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/registry/new-york/ui/card'
 import { Icons } from '@/components/icons'
 import { PREVIEW_BASE_URL } from '@/config/site'
@@ -34,11 +35,13 @@ function ActionButton({
   icon: Icon,
   label,
   variant = 'default',
+  onClick,
 }: {
   href: string
   icon: LucideIcon
   label: string
   variant?: 'default' | 'outline'
+  onClick?: (e: ReactMouseEvent<HTMLAnchorElement>) => void
 }) {
   const base =
     'inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-xs font-medium transition-colors whitespace-nowrap'
@@ -51,13 +54,36 @@ function ActionButton({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      onClick={(e) => e.stopPropagation()}
+      onClick={(e) => {
+        e.stopPropagation()
+        onClick?.(e)
+      }}
       className={`${base} ${styles}`}
     >
       <Icon className="h-3.5 w-3.5" />
       {label}
     </a>
   )
+}
+
+// 优先 GitHub 源下载；切 GitHub 连不上（网络层失败/超时）时降级到备用源（dow）
+async function downloadWithFallback(
+  e: ReactMouseEvent<HTMLAnchorElement>,
+  primary: string,
+  fallback: string
+) {
+  e.preventDefault()
+  const ctrl = new AbortController()
+  const timer = setTimeout(() => ctrl.abort(), 6000)
+  let ok = false
+  try {
+    await fetch(primary, { method: 'HEAD', mode: 'no-cors', signal: ctrl.signal })
+    ok = true
+  } catch {
+    ok = false
+  }
+  clearTimeout(timer)
+  window.open(ok ? primary : fallback, '_blank', 'noopener')
 }
 
 export function NavigationCard({ item, siteConfig }: NavigationCardProps) {
@@ -72,6 +98,7 @@ export function NavigationCard({ item, siteConfig }: NavigationCardProps) {
   const primaryLabel = canPreview ? '在线预览' : '项目页面'
   const primaryIcon = canPreview ? Play : Globe
   const downloadHref = item.downloadUrl || item.href
+  const githubUrl = item.githubUrl
 
   return (
     <TooltipProvider>
@@ -133,10 +160,15 @@ export function NavigationCard({ item, siteConfig }: NavigationCardProps) {
                 <ActionButton href={primaryHref} icon={primaryIcon} label={primaryLabel} />
               )}
               <ActionButton
-                href={downloadHref}
+                href={githubUrl || downloadHref}
                 icon={Download}
                 label="下载"
                 variant="outline"
+                onClick={
+                  githubUrl
+                    ? (e) => downloadWithFallback(e, githubUrl, downloadHref)
+                    : undefined
+                }
               />
             </div>
           </Card>

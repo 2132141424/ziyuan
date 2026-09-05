@@ -16,7 +16,8 @@
           "icon": "/assets/images/icon-broken.svg",
           "previewPath": "/Files/2/page/",
           "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/2.zip",
-          "enabled": true
+          "enabled": true,
+          "githubUrl": "https://github.com/2132141424/waterfish-preview/releases/download/downloads/2.zip"
         },
         {
           "id": "1781510611007",
@@ -26,7 +27,8 @@
           "about": "传说之下（Undertale）汉化版｜汉化：星云散落｜版权归原开发商与汉化者，此为第三方汉化补丁，仅供学习交流，请支持正版",
           "icon": "/assets/images/icon-broken.svg",
           "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/7.7z",
-          "enabled": true
+          "enabled": true,
+          "githubUrl": "https://github.com/2132141424/waterfish-preview/releases/download/downloads/7.7z"
         },
         {
           "id": "1781510611012",
@@ -36,7 +38,8 @@
           "about": "植物大战僵尸·杂交版｜制作：潜艇伟伟迷｜收录于开源仓库 nextisme（GitHub）｜点击直接下载源码压缩包，版权归原制作人",
           "icon": "/assets/images/icon-broken.svg",
           "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/12.zip",
-          "enabled": true
+          "enabled": true,
+          "githubUrl": "https://github.com/2132141424/waterfish-preview/releases/download/downloads/12.zip"
         },
         {
           "id": "1781510611016",
@@ -114,7 +117,8 @@
               "useDefaultIcon": false,
               "enabled": true,
               "previewPath": "/Files/1/page/",
-              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/1.zip"
+              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/1.zip",
+              "githubUrl": "https://github.com/2132141424/waterfish-preview/raw/main/download/1.zip"
             },
             {
               "id": "1781510611003",
@@ -125,7 +129,8 @@
               "useDefaultIcon": false,
               "enabled": true,
               "previewPath": "/Files/3/page/",
-              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/3.zip"
+              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/3.zip",
+              "githubUrl": "https://github.com/2132141424/waterfish-preview/raw/main/download/3.zip"
             },
             {
               "id": "1781510611004",
@@ -136,7 +141,8 @@
               "useDefaultIcon": false,
               "enabled": true,
               "previewPath": "/Files/4/page/",
-              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/4.zip"
+              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/4.zip",
+              "githubUrl": "https://github.com/2132141424/waterfish-preview/raw/main/download/4.zip"
             },
             {
               "id": "1781510611005",
@@ -147,7 +153,8 @@
               "useDefaultIcon": false,
               "enabled": true,
               "previewPath": "/Files/5/page/",
-              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/5.zip"
+              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/5.zip",
+              "githubUrl": "https://github.com/2132141424/waterfish-preview/raw/main/download/5.zip"
             },
             {
               "id": "1781510611008",
@@ -158,7 +165,8 @@
               "useDefaultIcon": false,
               "enabled": true,
               "previewPath": "/Files/8/page/",
-              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/8.zip"
+              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/8.zip",
+              "githubUrl": "https://github.com/2132141424/waterfish-preview/raw/main/download/8.zip"
             },
             {
               "id": "1781510611013",
@@ -169,7 +177,8 @@
               "useDefaultIcon": false,
               "enabled": true,
               "previewPath": "/Files/13/page/",
-              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/13.zip"
+              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/13.zip",
+              "githubUrl": "https://github.com/2132141424/waterfish-preview/raw/main/download/13.zip"
             },
             {
               "id": "1781510611014",
@@ -180,7 +189,8 @@
               "useDefaultIcon": false,
               "enabled": true,
               "previewPath": "/Files/14/page/",
-              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/14.zip"
+              "downloadUrl": "https://dow.ziyuan.waterfish.ren/download/14.zip",
+              "githubUrl": "https://github.com/2132141424/waterfish-preview/raw/main/download/14.zip"
             }
           ]
         }
