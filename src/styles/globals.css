@@ -562,3 +562,12 @@
     text-align: left;
   }
 }
+
+/* 触屏设备：卡片操作按钮常显（不依赖 hover） */
+@media (hover: none) {
+  .hover-actions {
+    opacity: 1 !important;
+    transform: none !important;
+    pointer-events: auto !important;
+  }
+}
