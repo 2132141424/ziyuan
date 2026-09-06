@@ -67,12 +67,18 @@ export async function GET(request: Request) {
     return NextResponse.redirect(target, 302)
   }
 
-  // 未带签名：签发一次性签名短链并重定向到带签名的同一端点
+  // 未带签名：签发一次性签名短链。前端点击下载后经 json=1 获取该链接，签名于点击时生成
   const exp = Date.now() + TTL_MS
   const sig = sign(`${itemId}|${exp}`)
   const next = new URL('/api/dl', url.origin)
   next.searchParams.set('item', itemId)
   next.searchParams.set('t', sig)
   next.searchParams.set('exp', String(exp))
+  if (url.searchParams.get('json') === '1') {
+    return NextResponse.json({
+      url: next.toString(),
+      expiresAt: new Date(exp).toISOString(),
+    })
+  }
   return NextResponse.redirect(next.toString(), 302)
 }

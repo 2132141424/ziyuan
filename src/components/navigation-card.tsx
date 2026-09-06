@@ -67,7 +67,16 @@ function ActionButton({
 }
 
 // 下载走服务端一次性签名短链 /api/dl，前端不暴露真实下载地址；
-// 真实源（GitHub 优先、dow 兜底）由服务端裁决。
+// 真实源（GitHub 优先、dow 兜底）由服务端裁决。签名链接在点击下载时才生成。
+// 点击后用 json 接口取一次性签名链接再打开下载。
+async function requestSignedDownloadLink(itemId: string): Promise<string> {
+  const r = await fetch(`/api/dl?item=${encodeURIComponent(itemId)}&json=1`)
+  if (!r.ok) throw new Error(`download link failed: ${r.status}`)
+  const j = (await r.json()) as { url?: string }
+  if (!j.url) throw new Error('missing download url')
+  return j.url
+}
+
 export function NavigationCard({ item, siteConfig }: NavigationCardProps) {
   // 获取链接打开方式，默认为新窗口
   const linkTarget = siteConfig?.navigation?.linkTarget || '_blank'
@@ -146,6 +155,15 @@ export function NavigationCard({ item, siteConfig }: NavigationCardProps) {
                 icon={Download}
                 label="下载"
                 variant="outline"
+                onClick={async (e) => {
+                  e.preventDefault()
+                  try {
+                    const u = await requestSignedDownloadLink(item.id)
+                    window.open(u, '_blank', 'noopener')
+                  } catch {
+                    window.open(downloadHref, '_blank', 'noopener')
+                  }
+                }}
               />
             </div>
           </Card>
