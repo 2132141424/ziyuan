@@ -66,11 +66,9 @@ function ActionButton({
   )
 }
 
-// 下载走服务端一次性签名短链 /api/dl，前端不暴露真实下载地址；
-// 真实源（GitHub 优先、dow 兜底）由服务端裁决。签名链接在点击下载时才生成。
-// 点击后用 json 接口取一次性签名链接再打开下载。
+// 点击下载后向签发端点获取一次性签名短链再打开；未经签名的手工 /api/dl 访问会被服务端拒绝。
 async function requestSignedDownloadLink(itemId: string): Promise<string> {
-  const r = await fetch(`/api/dl?item=${encodeURIComponent(itemId)}&json=1`)
+  const r = await fetch(`/api/dl/sign?item=${encodeURIComponent(itemId)}`)
   if (!r.ok) throw new Error(`download link failed: ${r.status}`)
   const j = (await r.json()) as { url?: string }
   if (!j.url) throw new Error('missing download url')
