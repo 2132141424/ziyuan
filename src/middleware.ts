@@ -18,8 +18,43 @@ function parseEmptyKeyQuery(search: string): string {
   return ''
 }
 
+// 有 Markdown 表示的页面
+const MARKDOWN_PAGES = new Set(['/', '/index.html'])
+
+/** Accept 是否明确偏好 text/markdown（仅通配符不算，浏览器与 curl 默认仍拿 HTML） */
+function prefersMarkdown(accept: string): boolean {
+  if (!accept) return false
+  const lower = accept.toLowerCase()
+  if (!lower.includes('text/markdown')) return false
+
+  const qOf = (type: string): number => {
+    for (const part of lower.split(',')) {
+      const [rawType, ...params] = part.trim().split(';')
+      if (rawType.trim() !== type) continue
+      let q = 1
+      for (const p of params) {
+        const [k, v] = p.split('=')
+        if (k && k.trim() === 'q') q = Number.parseFloat(v) || 0
+      }
+      return q
+    }
+    return 0
+  }
+
+  const qMd = qOf('text/markdown')
+  return qMd > 0 && qMd >= qOf('text/html')
+}
+
 export async function middleware(request: NextRequest) {
   const { pathname, searchParams } = request.nextUrl
+
+  // Markdown 内容协商：Accept 明确要 text/markdown 时，内部 rewrite 到 Markdown 路由（地址栏不变）
+  if (MARKDOWN_PAGES.has(pathname) && prefersMarkdown(request.headers.get('accept') || '')) {
+    const url = request.nextUrl.clone()
+    url.pathname = '/api/markdown'
+    url.search = `?path=${encodeURIComponent(pathname)}`
+    return NextResponse.rewrite(url)
+  }
 
   // 兼容 /xuanchuan?=<id> 的无键名参数形式：内部 rewrite 为 ?id=<id>（地址栏不变）
   if (pathname === '/xuanchuan' && !searchParams.get('id')) {
@@ -46,5 +81,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/admin/:path*', '/xuanchuan']
+  matcher: ['/', '/admin/:path*', '/xuanchuan']
 }

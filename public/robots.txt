@@ -1,0 +1,20 @@
+# robots.txt — https://ziyuan.waterfish.ren/
+# 资源中心 · 水鱼之家
+#
+# Content Signals（内容信号）声明：告诉自动化系统本站内容可用于哪些用途。
+# 规范：https://contentsignals.org/
+#
+#   search   = 建立搜索索引、返回搜索结果（含标题/短摘要）—— 允许
+#   ai-input = 将内容实时输入 AI 模型（RAG / 生成式搜索问答）—— 不允许
+#   ai-train = 训练或微调 AI 模型 —— 不允许
+
+User-agent: *
+Content-Signal: ai-train=no, search=yes, ai-input=no
+Allow: /
+
+# 机器可读资源（供 Agent 自动发现）
+# API 目录     : https://ziyuan.waterfish.ren/.well-known/api-catalog
+# OpenAPI 描述 : https://ziyuan.waterfish.ren/.well-known/openapi.json
+# 接口文档     : https://ziyuan.waterfish.ren/docs/api.html
+# llms.txt     : https://ziyuan.waterfish.ren/llms.txt
+# Markdown 版本: 请求头加 Accept: text/markdown

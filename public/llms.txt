@@ -1,0 +1,30 @@
+# 资源中心 · 水鱼之家
+
+> 水鱼之家资源中心（ziyuan.waterfish.ren）持续收录开发工具、设计素材、学习文档与网页小游戏等数字资源，分类清晰、可直接在线预览或下载。本站仅作资源索引导航，跳转均指向原作者/官方出处，版权归各自所有者。
+
+## 站点
+
+- [资源中心](https://ziyuan.waterfish.ren/)：资源导航首页
+- [水鱼之家](https://waterfish.ren/)：上级站点，聚合博客、留言板等
+- [投稿](https://ziyuan.waterfish.ren/submit)：提交资源投稿
+
+## 机器可读资源
+
+- [API 目录](https://ziyuan.waterfish.ren/.well-known/api-catalog)：RFC 9727 linkset
+- [OpenAPI 描述](https://ziyuan.waterfish.ren/.well-known/openapi.json)：公开接口定义
+- [接口文档](https://ziyuan.waterfish.ren/docs/api.html)：人类可读的接口说明
+
+## 接口
+
+- [GET /api/navigation](https://ziyuan.waterfish.ren/api/navigation)：获取导航数据
+- [GET /api/site](https://ziyuan.waterfish.ren/api/site)：获取站点配置
+- [GET /api/dl/sign?item=<id>](https://ziyuan.waterfish.ren/api/dl/sign)：签发一次性下载链接
+- [GET /api/health](https://ziyuan.waterfish.ren/api/health)：健康状态
+
+## 内容信号
+
+`robots.txt` 中声明：允许搜索索引（search=yes），不允许模型训练（ai-train=no）与实时 AI 输入（ai-input=no）。
+
+## Markdown
+
+请求本站页面时带上 `Accept: text/markdown` 即可获得 Markdown 版本。

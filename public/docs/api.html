@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>资源中心 · 公开接口文档 | 水鱼之家</title>
+  <meta name="description" content="资源中心（ziyuan.waterfish.ren）对外公开的只读接口说明。">
+  <link rel="api-catalog" href="/.well-known/api-catalog" type="application/linkset+json">
+  <link rel="service-desc" href="/.well-known/openapi.json" type="application/vnd.oai.openapi+json">
+  <link rel="describedby" href="/llms.txt" type="text/plain">
+  <style>
+    :root { color-scheme: light dark; }
+    body { margin: 0; padding: 2.5rem 1.25rem; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; max-width: 44rem; margin-inline: auto; }
+    h1 { font-size: 1.6rem; margin: 0 0 .4rem; }
+    h2 { font-size: 1.15rem; margin: 2rem 0 .6rem; }
+    p.lead { color: #6b7280; margin: 0 0 1.5rem; }
+    table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+    th, td { text-align: left; padding: .55rem .7rem; border-bottom: 1px solid #e5e7eb; vertical-align: top; }
+    th { font-weight: 600; background: #f9fafb; }
+    code { background: #f3f4f6; padding: .1rem .35rem; border-radius: .3rem; font-size: .88em; }
+    a { color: #c2410c; }
+    footer { margin-top: 2.5rem; font-size: .85rem; color: #6b7280; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0f172a; color: #e2e8f0; }
+      th { background: #1e293b; }
+      th, td { border-color: #334155; }
+      code { background: #1e293b; }
+      a { color: #fb923c; }
+      p.lead, footer { color: #94a3b8; }
+    }
+  </style>
+</head>
+<body>
+  <h1>资源中心 · 公开接口文档</h1>
+  <p class="lead">本站为纯静态资源导航站点，下列接口均为公开只读接口，无需鉴权。</p>
+
+  <h2>发现资源</h2>
+  <table>
+    <thead><tr><th>资源</th><th>地址</th><th>类型</th></tr></thead>
+    <tbody>
+      <tr><td>API 目录（RFC 9727）</td><td><a href="/.well-known/api-catalog"><code>/.well-known/api-catalog</code></a></td><td><code>application/linkset+json</code></td></tr>
+      <tr><td>OpenAPI 描述</td><td><a href="/.well-known/openapi.json"><code>/.well-known/openapi.json</code></a></td><td><code>application/vnd.oai.openapi+json</code></td></tr>
+      <tr><td>LLM 索引</td><td><a href="/llms.txt"><code>/llms.txt</code></a></td><td><code>text/plain</code></td></tr>
+      <tr><td>机器人策略</td><td><a href="/robots.txt"><code>/robots.txt</code></a></td><td><code>text/plain</code></td></tr>
+    </tbody>
+  </table>
+
+  <h2>接口一览</h2>
+  <table>
+    <thead><tr><th>方法与路径</th><th>说明</th></tr></thead>
+    <tbody>
+      <tr><td><code>GET /api/navigation</code></td><td>返回全部分类、子分类与资源条目。</td></tr>
+      <tr><td><code>GET /api/site</code></td><td>返回站点名称、描述等配置。</td></tr>
+      <tr><td><code>GET /api/dl/sign?item=&lt;id&gt;</code></td><td>按资源 id 签发带 15 分钟时效签名的下载地址。</td></tr>
+      <tr><td><code>GET /api/dl?item=&amp;t=&amp;exp=</code></td><td>校验签名后 302 跳转到真实下载地址（需签名，不可直接拼装）。</td></tr>
+      <tr><td><code>GET /api/health</code></td><td>服务健康状态。</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Markdown 表示</h2>
+  <p>首页支持内容协商：请求头带 <code>Accept: text/markdown</code> 时返回 Markdown 版本，并附 <code>x-markdown-tokens</code>；浏览器与默认请求不受影响，仍返回 HTML。</p>
+  <pre><code>curl -H 'Accept: text/markdown' https://ziyuan.waterfish.ren/</code></pre>
+
+  <h2>内容信号</h2>
+  <p><code>robots.txt</code> 中声明 <code>Content-Signal: ai-train=no, search=yes, ai-input=no</code>：允许搜索索引，不允许模型训练与实时 AI 输入。</p>
+
+  <footer>
+    本站仅作资源索引导航，跳转均指向原作者/官方出处，版权归各自所有者。
+  </footer>
+</body>
+</html>
